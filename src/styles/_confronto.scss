@@ -1,0 +1,61 @@
+@use 'font';
+@use 'colors';
+
+.confronto {
+    min-height: 24vh;
+    margin-bottom: 4vh;
+
+    .confronto__placeholder {
+        display: block;
+        margin-left: auto;
+        background-color: colors.$grey;
+        border-radius: 2vw;
+        width: 16vh;
+        height: 16vh;
+    }
+
+    .confronto__versus {
+        margin: 0;
+        font-family: sporty-pro-inline, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 5vw;
+        text-align: center;
+        color: colors.$space-cadet;
+    }
+
+    .confronto__time {
+        display: block;
+        margin-left: auto;
+        width: 70%;
+    }
+
+    .right {
+        margin-left: unset;
+        margin-right: auto;
+    }
+
+    .confronto__button {
+        display: block;
+        width: 8vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2vh;
+        padding: 0.5vw;
+        border: 0.1vw solid colors.$space-cadet;
+        border-radius: 0.5vw;
+        outline: none;
+        background: none;
+        font-size: 0.75vw;
+        font-weight: 700;
+        text-align: center;
+        color: colors.$space-cadet;
+        cursor: pointer;
+    }
+
+    .submit {
+        background-color: colors.$space-cadet;
+        color: colors.$yellow;
+    }
+    
+}

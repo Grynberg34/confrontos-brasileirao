@@ -1,0 +1,11 @@
+@use 'font';
+@use 'colors';
+@use 'header';
+@use 'confronto';
+@use 'times';
+@use 'home'; 
+
+body {
+    font-family: "ofelia-display", sans-serif;
+    margin: 0;
+}

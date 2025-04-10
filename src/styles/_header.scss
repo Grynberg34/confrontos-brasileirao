@@ -1,0 +1,30 @@
+@use 'font';
+@use 'colors';
+
+.header {
+    padding-top: 8vh;
+    margin-bottom: 4vh;
+
+    .header__title {
+        margin-top: 0;
+        margin-bottom: 1vh;
+        font-family: sporty-pro-inline, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 2vw;
+        text-align: center;
+        color: colors.$space-cadet;
+    }
+
+    .header__subtitle {
+        margin-top: 0;
+        margin-bottom: 1vh;
+        font-family: sporty-pro, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.25vw;
+        text-align: center;
+        color: colors.$blue;
+
+    }
+}

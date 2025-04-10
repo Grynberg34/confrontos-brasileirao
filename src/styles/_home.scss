@@ -1,0 +1,10 @@
+@use 'font';
+@use 'colors';
+
+.home {
+    margin: 0;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    background-color: colors.$lightYellow;
+    min-height: 100vh;
+}
