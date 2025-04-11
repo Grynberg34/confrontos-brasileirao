@@ -19,6 +19,10 @@ const Teams = () => {
     dispatch(addTime(time));
   };
 
+  if (times.list.length === 0) {
+    return <div></div>;
+  } 
+
   return (
     <div className="times">
       {times.list.length > 0 && (

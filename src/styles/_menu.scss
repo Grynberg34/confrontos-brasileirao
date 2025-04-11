@@ -11,19 +11,21 @@
         font-weight: 900;
         font-style: normal;
         font-size: 1.75vw;
-        color: colors.$yellow;    }
+        color: colors.$olivine; 
+        user-select: none;
+    }
 
     .menu__link {
         display: block;
         padding: 0.5vw;
         border-radius: 0.5vw;
-        background-color: colors.$lightYellow;
+        background-color: colors.$olivine;
         color: colors.$spaceCadet;
         text-decoration: none;
         text-align: center;
 
         &:hover {
-            background-color: colors.$olivine;;
+            background-color: colors.$yellow;
         }
     }
 }

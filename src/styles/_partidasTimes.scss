@@ -1,0 +1,462 @@
+@use 'font';
+@use 'colors';
+
+.Empate {
+    background-color: colors.$p_cinza2;
+    color: colors.$p_cinza1;
+    border: 0.25vw solid colors.$p_cinza1;
+
+    .partidas__item__youtube {
+        color: colors.$p_cinza1;
+    }
+}
+
+.América-MG {
+    background-color: colors.$p_branco;
+    color: colors.$p_verde1;
+    border: 0.25vw solid colors.$p_verde1;
+
+    .partidas__item__youtube {
+        color: colors.$p_verde1;
+    }
+}
+
+.América-RN {
+    background-color: colors.$p_vermelho;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_vermelho2;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Athletico-PR {
+    background-color: colors.$p_preto;
+    color: colors.$p_vermelho2;
+    border: 0.25vw solid colors.$p_vermelho;
+
+    .partidas__item__youtube {
+        color: colors.$p_vermelho2;
+    }
+}
+
+.Atlético-GO {
+    background-color: colors.$p_vermelho;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_preto;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Atlético-MG {
+    background-color: colors.$p_preto;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_amarelo;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Avaí {
+    background-color: colors.$p_azul2;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_azul;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Bahia {
+    background-color: colors.$p_azul2;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_vermelho;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Barueri {
+    background-color: colors.$p_amarelo;
+    color: colors.$p_azul;
+    border: 0.25vw solid colors.$p_vermelho;
+
+    .partidas__item__youtube {
+        color: colors.$p_azul;
+    }
+}
+
+.Botafogo {
+    background-color: colors.$p_cinza1;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_branco;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Bragantino {
+    background-color: colors.$p_branco;
+    color: colors.$p_preto;
+    border: 0.25vw solid colors.$p_vermelho2;
+
+    .partidas__item__youtube {
+        color: colors.$p_preto;
+    }
+}
+
+.Brasiliense {
+    background-color: colors.$p_amarelo;
+    color: colors.$p_preto;
+    border: 0.25vw solid colors.$p_verde1;
+
+    .partidas__item__youtube {
+        color: colors.$p_preto;
+    }
+}
+
+.Ceará {
+    background-color: colors.$p_preto;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_cinza1;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Chapecoense {
+    background-color: colors.$p_verde2;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_verde1;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Corinthians {
+    background-color: colors.$p_branco;
+    color: colors.$p_preto;
+    border: 0.25vw solid colors.$p_preto;
+
+    .partidas__item__youtube {
+        color: colors.$p_preto;
+    }
+}
+
+.Coritiba {
+    background-color: colors.$p_verde1;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_verde2;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Criciúma {
+    background-color: colors.$p_amarelo;
+    color: colors.$p_preto;
+    border: 0.25vw solid colors.$p_preto;
+
+    .partidas__item__youtube {
+        color: colors.$p_preto;
+    }
+}
+
+.Cruzeiro {
+    background-color: colors.$p_azul;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_branco;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.CSA {
+    background-color: colors.$p_azul2;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_branco;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Cuiabá {
+    background-color: colors.$p_verde1;
+    color: colors.$p_amarelo;
+    border: 0.25vw solid colors.$p_amarelo;
+
+    .partidas__item__youtube {
+        color: colors.$p_amarelo;
+    }
+}
+
+.Figueirense {
+    background-color: colors.$p_preto;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_verde1;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Flamengo {
+    background-color: colors.$p_vermelho;
+    color: colors.$p_preto;
+    border: 0.25vw solid colors.$p_preto;
+
+    .partidas__item__youtube {
+        color: colors.$p_preto;
+    }
+}
+
+.Fluminense {
+    background-color: colors.$p_vermelho3;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_verde1;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Fortaleza {
+    background-color: colors.$p_azul;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_vermelho;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Goiás {
+    background-color: colors.$p_verde2;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_verde1;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Grêmio {
+    background-color: colors.$p_azul2;
+    color: colors.$p_preto;
+    border: 0.25vw solid colors.$p_branco;
+
+    .partidas__item__youtube {
+        color: colors.$p_preto;
+    }
+}
+
+.Guarani {
+    background-color: colors.$p_verde1;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_branco;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Internacional {
+    background-color: colors.$p_vermelho;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_branco;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Ipatinga {
+    background-color: colors.$p_verde1;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_vermelho;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Joinville {
+    background-color: colors.$p_preto;
+    color: colors.$p_vermelho;
+    border: 0.25vw solid colors.$p_branco;
+
+    .partidas__item__youtube {
+        color: colors.$p_vermelho;
+    }
+}
+
+.Juventude {
+    background-color: colors.$p_verde2;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_branco;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Mirassol {
+    background-color: colors.$p_amarelo;
+    color: colors.$p_verde1;
+    border: 0.25vw solid colors.$p_verde2;
+
+    .partidas__item__youtube {
+        color: colors.$p_verde1;
+    }
+}
+
+.Náutico {
+    background-color: colors.$p_branco;
+    color: colors.$p_vermelho2;
+    border: 0.25vw solid colors.$p_vermelho2;
+
+    .partidas__item__youtube {
+        color: colors.$p_vermelho2;
+    }
+}
+
+.Palmeiras {
+    background-color: colors.$p_verde1;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_branco;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Paraná {
+    background-color: colors.$p_azul3;
+    color: colors.$p_vermelho;
+    border: 0.25vw solid colors.$p_vermelho2;
+
+    .partidas__item__youtube {
+        color: colors.$p_vermelho;
+    }
+}
+
+.Paysandu {
+    background-color: colors.$p_azul;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_azul3;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Ponte-Preta {
+    background-color: colors.$p_preto;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_cinza1;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Portuguesa {
+    background-color: colors.$p_vermelho;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_verde2;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Santa-Cruz {
+    background-color: colors.$p_preto;
+    color: colors.$p_vermelho;
+    border: 0.25vw solid colors.$p_branco;
+
+    .partidas__item__youtube {
+        color: colors.$p_vermelho;
+    }
+}
+
+.Santo-André {
+    background-color: colors.$p_amarelo;
+    color: colors.$p_azul;
+    border: 0.25vw solid colors.$p_verde1;
+
+    .partidas__item__youtube {
+        color: colors.$p_azul;
+    }
+}
+
+.Santos {
+    background-color: colors.$p_branco;
+    color: colors.$p_preto;
+    border: 0.25vw solid colors.$p_amarelo;
+
+    .partidas__item__youtube {
+        color: colors.$p_preto;
+    }
+}
+
+.São-Caetano {
+    background-color: colors.$p_azul;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_azul2;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.São-Paulo {
+    background-color: colors.$p_vermelho;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_preto;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Sport {
+    background-color: colors.$p_vermelho;
+    color: colors.$p_preto;
+    border: 0.25vw solid colors.$p_amarelo;
+
+    .partidas__item__youtube {
+        color: colors.$p_preto;
+    }
+}
+
+.Vasco {
+    background-color: colors.$p_preto;
+    color: colors.$p_branco;
+    border: 0.25vw solid colors.$p_branco;
+
+    .partidas__item__youtube {
+        color: colors.$p_branco;
+    }
+}
+
+.Vitória {
+    background-color: colors.$p_vermelho;
+    color: colors.$p_preto;
+    border: 0.25vw solid colors.$p_branco;
+
+    .partidas__item__youtube {
+        color: colors.$p_preto;
+    }
+}

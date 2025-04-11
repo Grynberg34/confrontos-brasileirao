@@ -1,0 +1,118 @@
+@use 'font';
+@use 'colors';
+
+.partidas {
+    margin-top: 6vh;
+    padding-bottom: 20vh;
+
+    .partidas__order {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin-bottom: 6vh;
+
+        .partidas__order__text {
+            display: inline-block;
+            margin: 0;
+            margin-right: 1vw;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 1vw;
+            color: colors.$yellow;
+        }
+
+        .partidas__order__button {
+            display: inline-block;
+            width: 10vw;
+            margin-right: 1vw;
+            padding: 0.5vw;
+            border-radius: 0.5vw;
+            outline: none;
+            border: none;
+            background-color: colors.$blue;
+            font-family: sporty-pro, sans-serif;
+            font-size: 1vw;
+            font-weight: 700;
+            text-align: center;
+            color: colors.$yellow;
+            cursor: pointer;
+
+            &:hover {
+                background-color: colors.$yellow;
+                color: colors.$spaceCadet;
+            }
+        }
+
+        .selected {
+            background-color: colors.$yellow;
+            color: colors.$spaceCadet;
+        }
+    }
+
+    .partidas__item {
+        position: relative;
+        padding: 2vw;
+        padding-bottom: 4vh;
+        margin-bottom: 2vh;
+        border-radius: 0.5vw;
+
+
+        .partidas__item__header {
+
+            .partidas__item__header__rodada {
+                margin: 0;
+                margin-bottom: 1vh;
+                font-family: sporty-pro, sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                font-size: 1vw;
+            }
+
+            .partidas__item__header__date {
+                margin: 0;
+                margin-bottom: 3vh;
+                font-family: sporty-pro, sans-serif;
+                font-weight: 400;
+                font-style: italic;
+                font-size: 0.75vw;
+            }
+        }
+
+        .partidas__item__team {
+
+            .partidas__item__team__img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 75%;
+            }
+
+        }
+
+        .partidas__item__score {
+            .partidas__item__score__value {
+                margin: 0;
+                margin-top: 2vh;
+                font-family: sporty-pro-inline, sans-serif;
+                font-weight: 900;
+                font-style: normal;
+                font-size: 2.5vw;
+                text-align: center;
+            }
+        }
+
+        .partidas__item__youtube {
+            position: absolute;
+            top: 10%;
+            right: 7.5%;
+            font-size: 3vw;
+            text-decoration: none;
+
+            &:hover {
+                color: colors.$grey;
+            }
+        }
+
+
+    }
+}

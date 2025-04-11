@@ -2,6 +2,7 @@ export interface Partida {
     id: number;
     data: string;
     rodada: number;
+    ano: number;
     time_mandante: string;
     time_visitante: string;
     gols_mandante: number;
