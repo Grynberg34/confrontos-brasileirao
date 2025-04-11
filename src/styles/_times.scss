@@ -2,6 +2,12 @@
 @use 'colors';
 
 .times {
+    padding: 0.5vw;
+    padding-top: 2vw;
+    border-radius: 0.5vw;
+    background-color: colors.$yellow;
+    box-shadow: 0px 5px 5px 0px colors.$spaceCadet;
+
     .times__lista {
         display: flex;
         flex-wrap: wrap;

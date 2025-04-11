@@ -2,7 +2,7 @@
 @use 'colors';
 
 .header {
-    padding-top: 8vh;
+    padding-top: 6vh;
     margin-bottom: 4vh;
 
     .header__title {
@@ -11,15 +11,14 @@
         font-family: sporty-pro-inline, sans-serif;
         font-weight: 900;
         font-style: normal;
-        font-size: 2vw;
+        font-size: 2.25vw;
         text-align: center;
-        color: colors.$space-cadet;
+        color: colors.$spaceCadet;
     }
 
     .header__subtitle {
         margin-top: 0;
         margin-bottom: 1vh;
-        font-family: sporty-pro, sans-serif;
         font-weight: 700;
         font-style: normal;
         font-size: 1.25vw;

@@ -1,0 +1,76 @@
+@use 'font';
+@use 'colors';
+
+.display {
+    margin-bottom: 4vh;
+    border-radius: 0.75vw;
+    padding: 1vw;
+    padding-top: 2vw;
+    background-color: colors.$blue;
+    box-shadow: 0px 5px 5px 0px colors.$spaceCadet;
+
+    .display__placeholder {
+        display: block;
+        margin-left: auto;
+        background-color: colors.$spaceCadet;
+        border-radius: 2vw;
+        width: 16vh;
+        height: 16vh;
+    }
+
+    .display__versus {
+        margin: 0;
+        font-family: sporty-pro-inline, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 5.5vw;
+        text-align: center;
+        color: colors.$yellow;
+    }
+
+    .display__time {
+        display: block;
+        margin-left: auto;
+        width: 70%;
+    }
+
+    .right {
+        margin-left: unset;
+        margin-right: auto;
+    }
+
+    .display__options {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 4vh;
+
+        .display__options__button {
+            display: inline-block;
+            width: 10vw;
+            margin-bottom: 2vh;
+            padding: 0.5vw;
+            border-radius: 0.5vw;
+            outline: none;
+            border: none;
+            background-color: colors.$olivine;
+            font-family: sporty-pro, sans-serif;
+            font-size: 0.75vw;
+            font-weight: 700;
+            text-align: center;
+            color: colors.$blue;
+            cursor: pointer;
+
+            &:hover {
+                background-color: colors.$spaceCadet;
+                color: colors.$yellow;
+            }
+        }
+    
+        .submit {
+            background-color: colors.$yellow;
+            color: colors.$blue;
+        }
+
+    }
+    
+}

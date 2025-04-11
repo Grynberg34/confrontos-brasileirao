@@ -1,11 +1,12 @@
 @use 'font';
 @use 'colors';
 @use 'header';
-@use 'confronto';
+@use 'display';
 @use 'times';
 @use 'home'; 
+@use 'confronto';
 
 body {
-    font-family: "ofelia-display", sans-serif;
+    font-family: sporty-pro, sans-serif;
     margin: 0;
 }
