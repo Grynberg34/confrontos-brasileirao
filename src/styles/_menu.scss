@@ -1,0 +1,29 @@
+@use 'font';
+@use 'colors';
+
+.menu {
+    padding-top: 4vh;
+    padding-bottom: 6vh;
+
+    .menu__title {
+        margin: 0;
+        font-family: sporty-pro-inline, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 1.75vw;
+        color: colors.$yellow;    }
+
+    .menu__link {
+        display: block;
+        padding: 0.5vw;
+        border-radius: 0.5vw;
+        background-color: colors.$lightYellow;
+        color: colors.$spaceCadet;
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+            background-color: colors.$olivine;;
+        }
+    }
+}

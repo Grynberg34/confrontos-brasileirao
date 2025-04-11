@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <div>
-      {partidas.data.length === 0 ? <Home /> : <Confronto />}
+      {partidas.data === null ? <Home /> : <Confronto />}
     </div>
   );
 }

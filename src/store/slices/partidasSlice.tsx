@@ -1,9 +1,9 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { Partida, PartidasState, PartidaRequest } from '../types/partidas';
+import { Partida, PartidasState, PartidaRequest, ConfrontosData } from '../types/partidas';
 
 const initialState: PartidasState = {
-  data: [],
+  data: null,
   loading: false,
   error: null,
 };
@@ -11,7 +11,7 @@ const initialState: PartidasState = {
 export const fetchPartidas = createAsyncThunk(
   'partidas/fetch',
   async ({ timeX, timeY }: PartidaRequest) => {
-    const response = await axios.post<Partida[]>(`${process.env.NEXT_PUBLIC_API_URL}confrontos`, { timeX, timeY });
+    const response = await axios.post<ConfrontosData>(`${process.env.NEXT_PUBLIC_API_URL}confrontos`, { timeX, timeY });
     return response.data;
   }
 );
@@ -26,7 +26,7 @@ const partidasSlice = createSlice({
         state.loading = true;
         state.error = null;
       })
-      .addCase(fetchPartidas.fulfilled, (state, action: PayloadAction<Partida[]>) => {
+      .addCase(fetchPartidas.fulfilled, (state, action: PayloadAction<ConfrontosData>) => {
         state.loading = false;
         state.data = action.payload;
       })

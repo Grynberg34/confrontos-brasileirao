@@ -1,0 +1,94 @@
+@use 'font';
+@use 'colors';
+
+.info {
+    padding: 2vw;
+    padding-top: 8vh;
+    border-radius: 0.25vw;
+    border: 0.25vw solid colors.$olivine;
+    background-color: colors.$blue;
+
+    .info__versus {
+        margin: 0;
+        font-family: sporty-pro-inline, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 5.5vw;
+        text-align: center;
+        color: colors.$yellow;
+        height: 20vh;
+    }
+
+    .info__time {
+        .info__time__img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1vh;
+            width: 80%;
+        }
+
+        .info__time__name {
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+            font-family: sporty-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1vw;
+            color: colors.$yellow;
+            text-align: center;
+        }
+    }
+
+    .info__draws--span {
+        font-size: 0.75vw;
+        color: colors.$olivine;
+        margin-left: 0.5vw;
+    }
+
+    .info__section {
+        height: 20vh;
+
+        .info__section__points {
+            margin: 0;
+            font-family: sporty-pro-inline, sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 4vw;
+            text-align: center;
+            color: colors.$yellow;
+        }
+
+        .info__section__title {
+            display: block;
+            margin: 0;
+            font-family: sporty-pro, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 1vw;
+            text-align: center;
+            color: colors.$yellow;
+        }
+
+    }
+
+    .info__subtitle {
+        margin-top: 0;
+        margin-bottom: 2vh;
+        background-color: colors.$spaceCadet;
+        border-radius: 0.5vw;
+        font-family: sporty-pro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.25vw;
+        color: colors.$olivine;
+        text-align: center;
+    }
+
+    .info__subtitle--span {
+        font-size: 0.9vw;
+        color: colors.$white;
+        margin-left: 0.25vw;
+    }
+
+}
