@@ -116,3 +116,85 @@
 
     }
 }
+
+@media only screen and (max-width: 767px) {
+
+    .partidas {
+        margin-top: 8vh;
+        padding-bottom: 20vh;
+    
+        .partidas__order {
+            margin-bottom: 6vh;
+    
+            .partidas__order__text {
+                margin-right: 4vw;
+                font-size: 4vw;
+            }
+    
+            .partidas__order__button {
+                width: unset;
+                margin-right: 2vw;
+                padding: 2vw;
+                border-radius: 2vw;
+                font-size: 3vw;
+                letter-spacing: 0.2vw;
+    
+                &:hover {
+                    background-color: colors.$yellow;
+                    color: colors.$spaceCadet;
+                }
+            }
+    
+        }
+    
+        .partidas__item {
+            padding: 6vw;
+            padding-bottom: 8vw;
+            margin-bottom: 1vh;
+            border-radius: 2vw;
+    
+    
+            .partidas__item__header {
+    
+                .partidas__item__header__rodada {
+                    margin-bottom: 1vh;
+                    font-size: 4vw;
+                }
+    
+                .partidas__item__header__date {
+                    margin-bottom: 3vh;
+                    font-size: 3.5vw;
+                }
+            }
+    
+            .partidas__item__team {
+    
+                .partidas__item__team__img {
+                    width: 100%;
+                }
+    
+            }
+    
+            .partidas__item__score {
+                .partidas__item__score__value {
+                    margin: 0;
+                    margin-top: 2vh;
+                    font-size: 7.5vw;
+                }
+            }
+    
+            .partidas__item__youtube {
+                top: 10%;
+                right: 7.5%;
+                font-size: 12vw;
+    
+                &:hover {
+                    color: unset;
+                }
+            }
+    
+    
+        }
+    }
+
+}

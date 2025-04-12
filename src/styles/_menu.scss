@@ -23,9 +23,37 @@
         color: colors.$spaceCadet;
         text-decoration: none;
         text-align: center;
+        font-size: 1vw;
 
         &:hover {
             background-color: colors.$yellow;
         }
     }
+}
+
+@media only screen and (max-width: 767px) {
+
+
+    .menu {
+        padding-top: 4vh;
+        padding-bottom: 6vh;
+    
+        .menu__title {
+            margin: 0;
+            font-size: 6vw;
+            text-align: center;
+        }
+    
+        .menu__link {
+            padding: 1.5vw;
+            margin-top: 1vh;
+            border-radius: 2vw;
+            font-size: 3.5vw;
+
+            &:hover {
+                background-color: colors.$olivine
+            }
+        }
+    }
+
 }

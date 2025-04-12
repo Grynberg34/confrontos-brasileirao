@@ -8,3 +8,11 @@
     min-height: 100vh;
     background-color: colors.$spaceCadet;
 }
+
+@media only screen and (max-width: 767px) {
+    .confronto {
+        margin: 0;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}

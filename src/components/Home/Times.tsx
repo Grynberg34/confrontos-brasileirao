@@ -16,6 +16,14 @@ const Teams = () => {
   }, [dispatch, times.timeX, times.timeY]);
 
   const handleClick = (time: string) => {
+    if (time === times.timeX) {
+      return;
+    }
+
+    if (window.innerWidth <= 767) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
     dispatch(addTime(time));
   };
 

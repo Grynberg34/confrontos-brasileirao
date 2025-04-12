@@ -9,3 +9,11 @@
     background-color: colors.$lightYellow;
     min-height: 100vh;
 }
+
+@media only screen and (max-width: 767px) {
+    .home {
+        padding-bottom: 20vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}

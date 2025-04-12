@@ -27,3 +27,24 @@
 
     }
 }
+
+@media only screen and (max-width: 767px) {
+
+    .header {
+        padding-top: 10vh;
+        margin-bottom: 6vh;
+    
+        .header__title {
+            margin-top: 0;
+            margin-bottom: 3vh;
+            font-size: 9vw;
+        }
+    
+        .header__subtitle {
+            margin-top: 0;
+            margin-bottom: 1vh;
+            font-size: 4vw;
+        }
+    }
+
+}

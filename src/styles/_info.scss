@@ -40,14 +40,12 @@
         }
     }
 
-    .info__draws--span {
-        font-size: 0.75vw;
-        color: colors.$olivine;
-        margin-left: 0.5vw;
-    }
-
     .info__section {
         height: 20vh;
+
+        .info__section__img {
+            display: none;
+        }
 
         .info__section__points {
             margin: 0;
@@ -91,4 +89,66 @@
         margin-left: 0.25vw;
     }
 
+}
+
+@media only screen and (max-width: 767px) {
+    .info {
+        padding: 4vw;
+        padding-top: 4vw;
+        padding-bottom: 0;
+        border-radius: 1vw;
+        border: 1vw solid colors.$olivine;
+    
+        .info__versus {
+            margin: 0;
+            font-size: 16vw;
+            height: 25vh;
+        }
+    
+        .info__time {
+            display: none;
+        }
+    
+    
+        .info__section {
+            height: 25vh;
+
+            .info__section__img {
+                display: block;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 1vh;
+            }
+    
+            .info__section__points {
+                margin: 0;
+                font-size: 12vw;
+            }
+    
+            .info__section__title {
+                margin: 0;
+                font-size: 4vw;
+            }
+    
+        }
+    
+        .info__subtitle {
+            margin-top: 0;
+            margin-bottom: 2vh;
+            border-radius: 2vw;
+            font-size: 8vw;
+            padding: 2vw;
+            padding-bottom: 4vw;
+
+        }
+        
+        .info__subtitle--span {
+            display: block;;
+            font-size: 3vw;
+            margin-left: 0.25vw;
+            letter-spacing: 0.2vw;
+        }
+    
+    }
 }
