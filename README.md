@@ -1,6 +1,6 @@
 # Confrontos Corridos
 
-Confrontos Corridos is a web application built with **Next.js**, **React**, and **Redux** where you choose two brazilian football teams and a complete history (with all matches and stats) between the teams in the Brazilian League (from 2003 to 2025) is shown.
+A web application built with React, Redux, Next.js, and TypeScript that allows users to compare head-to-head matchups between two clubs in the Brazilian league (Brasileirão) during the points-based era (2003–2025). Simply select any two teams to view all matches between them, along with detailed stats such as wins, draws, losses, goals scored, goals conceded, and overall performance. Perfect for fans, analysts, and anyone curious about Brazilian football data.
 
 ---
 
