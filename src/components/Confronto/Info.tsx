@@ -2,11 +2,10 @@
 
 import React from "react";
 import Grid from '@mui/material/Grid';
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
 
 const Info = () => {
-  const dispatch = useDispatch<typeof import("@/store/store").store.dispatch>();
   const partidas = useSelector((state: RootState) => state.partidas);
 
   if (partidas.data === null) {

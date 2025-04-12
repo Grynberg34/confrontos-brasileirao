@@ -2,6 +2,10 @@ import Grid from '@mui/material/Grid';
 
 const Menu = () => {
 
+  const handleRefresh = () => {
+    window.location.reload();
+  };
+
   return (
     <div className='menu'>
 
@@ -12,7 +16,7 @@ const Menu = () => {
 
 
         <Grid size={{ xs: 5, sm: 4 }}>
-          <a className='menu__link' href="/">novo confronto</a>
+          <h2 className='menu__refresh' onClick={handleRefresh}>novo confronto</h2>
         </Grid>
       </Grid>
 

@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { Partida, PartidasState, PartidaRequest, ConfrontosData } from '../types/partidas';
+import { PartidasState, PartidaRequest, ConfrontosData } from '../types/partidas';
 
 const initialState: PartidasState = {
   data: null,

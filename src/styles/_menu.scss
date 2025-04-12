@@ -15,7 +15,7 @@
         user-select: none;
     }
 
-    .menu__link {
+    .menu__refresh {
         display: block;
         padding: 0.5vw;
         border-radius: 0.5vw;
@@ -24,6 +24,7 @@
         text-decoration: none;
         text-align: center;
         font-size: 1vw;
+        cursor: pointer;
 
         &:hover {
             background-color: colors.$yellow;
@@ -44,7 +45,7 @@
             text-align: center;
         }
     
-        .menu__link {
+        .menu__refresh {
             padding: 1.5vw;
             margin-top: 1vh;
             border-radius: 2vw;
