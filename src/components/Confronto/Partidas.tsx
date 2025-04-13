@@ -50,7 +50,7 @@ const Partidas = () => {
                     {partida.ano} - Rodada {partida.rodada}
                   </h4>
                   <h3 className="partidas__item__header__date">
-                    {new Date(partida.data).toLocaleDateString()}
+                    {new Date(partida.data).toLocaleDateString('pt-BR', { timeZone: 'UTC' })}
                   </h3>
                 </div>
 
