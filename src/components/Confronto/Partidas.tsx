@@ -8,7 +8,9 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const Partidas = () => {
   const partidas = useSelector((state: RootState) => state.partidas);
+  const times = useSelector((state: RootState) => state.times);
   const [order, setOrder] = useState<"asc" | "desc">("desc");
+  const [filter, setFilter] = useState<"all" | "timeXHome" | "timeYHome">("all");
 
   if (partidas.data === null) {
     return <div></div>;
@@ -20,8 +22,37 @@ const Partidas = () => {
     return order === "asc" ? dateA - dateB : dateB - dateA;
   });
 
+  const filteredConfrontos = sortedConfrontos.filter((partida) => {
+    if (filter === "timeXHome") return partida.time_mandante === times.timeX;
+    if (filter === "timeYHome") return partida.time_mandante === times.timeY;
+    return true;
+  });
+
   return (
     <div className="partidas">
+
+      <div className="partidas__filter">
+        <h1 className="partidas__filter__text">filtrar:</h1>
+        <button
+          className={`partidas__filter__button ${filter === "all" ? "selected" : ""}`}
+          onClick={() => setFilter("all")}
+        >
+          Todos
+        </button>
+        <button
+          className={`partidas__filter__button ${filter === "timeXHome" ? "selected" : ""}`}
+          onClick={() => setFilter("timeXHome")}
+        >
+          {times.timeX} mandante
+        </button>
+        <button
+          className={`partidas__filter__button ${filter === "timeYHome" ? "selected" : ""}`}
+          onClick={() => setFilter("timeYHome")}
+        >
+          {times.timeY} mandante
+        </button>
+      </div>
+
       <div className="partidas__order">
         <h1 className="partidas__order__text">ordenar:</h1>
         <button
@@ -39,7 +70,7 @@ const Partidas = () => {
       </div>
 
       <Grid container spacing={4}>
-        {sortedConfrontos.map((partida, index) => {
+        {filteredConfrontos.map((partida, index) => {
           const youtubeSearchQuery = `https://www.youtube.com/results?search_query=campeonato+brasileiro+${partida.ano}+${new Date(partida.data).toLocaleDateString()}+rodada+${partida.rodada}+${partida.time_mandante}+${partida.gols_mandante}x${partida.gols_visitante}+${partida.time_visitante}`;
 
           return (

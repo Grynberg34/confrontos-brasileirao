@@ -1,19 +1,25 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Grid from '@mui/material/Grid';
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "@/store/store";
 import { resetTimes } from "@/store/slices/timesSlice";
 import { fetchPartidas } from "@/store/slices/partidasSlice";
+import CircularProgress from '@mui/material/CircularProgress';
 
 const Display = () => {
   const dispatch = useDispatch<typeof import("@/store/store").store.dispatch>();
   const times = useSelector((state: RootState) => state.times);
 
+  const [loading, setLoading] = useState(false);
+
   const handleFetchPartidas = () => {
     if (times.timeX && times.timeY) {
-      dispatch(fetchPartidas({ timeX: times.timeX, timeY: times.timeY }));
+      setLoading(true);
+      setTimeout(() => {
+        dispatch(fetchPartidas({ timeX: times.timeX!, timeY: times.timeY! }));
+      }, 2000);
     }
   };
 
@@ -48,7 +54,9 @@ const Display = () => {
         )}
 
         {(times.timeX !== null && times.timeY !== null) && (
-          <button className="display__options__button submit" onClick={handleFetchPartidas}>ver confronto</button>
+          <button className="display__options__button submit" onClick={handleFetchPartidas} disabled={loading}>
+          {loading ? <CircularProgress size={20} color="inherit" /> : "ver confronto"}
+        </button>
         )}
 
       </div>
