@@ -28,7 +28,9 @@ const Teams = () => {
   };
 
   if (times.list.length === 0) {
-    return <div></div>;
+    return <div className="times">
+      <h1 className="times__text">carregando times...</h1>
+    </div>;
   } 
 
   return (
