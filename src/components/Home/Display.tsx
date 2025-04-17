@@ -55,7 +55,7 @@ const Display = () => {
 
         {(times.timeX !== null && times.timeY !== null) && (
           <button className="display__options__button submit" onClick={handleFetchPartidas} disabled={loading}>
-          {loading ? <CircularProgress size={20} color="inherit" /> : "ver confronto"}
+          {loading ? <CircularProgress size={20} color="inherit" /> : "pesquisar confronto"}
         </button>
         )}
 

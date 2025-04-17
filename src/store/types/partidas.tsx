@@ -8,6 +8,10 @@ export interface Partida {
     gols_mandante: number;
     gols_visitante: number;
     resultado: string;
+    tecnico_mandante: string | null;
+    tecnico_visitante: string | null;
+    gols_jogadores_mandante: string | null;
+    gols_jogadores_visitante: string | null;
 }
   
 export interface TimeStats {

@@ -5,6 +5,8 @@ import Grid from "@mui/material/Grid";
 import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import FilterButtons from "./FilterButtons";
+import OrderButtons from "./OrderButtons";
 
 const Partidas = () => {
   const partidas = useSelector((state: RootState) => state.partidas);
@@ -30,44 +32,15 @@ const Partidas = () => {
 
   return (
     <div className="partidas">
-
-      <div className="partidas__filter">
-        <h1 className="partidas__filter__text">filtrar:</h1>
-        <button
-          className={`partidas__filter__button ${filter === "all" ? "selected" : ""}`}
-          onClick={() => setFilter("all")}
-        >
-          Todos
-        </button>
-        <button
-          className={`partidas__filter__button ${filter === "timeXHome" ? "selected" : ""}`}
-          onClick={() => setFilter("timeXHome")}
-        >
-          {times.timeX} mandante
-        </button>
-        <button
-          className={`partidas__filter__button ${filter === "timeYHome" ? "selected" : ""}`}
-          onClick={() => setFilter("timeYHome")}
-        >
-          {times.timeY} mandante
-        </button>
-      </div>
-
-      <div className="partidas__order">
-        <h1 className="partidas__order__text">ordenar:</h1>
-        <button
-          className={`partidas__order__button ${order === "desc" ? "selected" : ""}`}
-          onClick={() => setOrder("desc")}
-        >
-          2025-2003
-        </button>
-        <button
-          className={`partidas__order__button ${order === "asc" ? "selected" : ""}`}
-          onClick={() => setOrder("asc")}
-        >
-          2003-2025
-        </button>
-      </div>
+      <FilterButtons
+        filter={filter}
+        setFilter={setFilter}
+        times={{
+          timeX: times.timeX ?? "",
+          timeY: times.timeY ?? "",
+        }}
+      />
+      <OrderButtons order={order} setOrder={setOrder} />
 
       <Grid container spacing={4}>
         {filteredConfrontos.map((partida, index) => {
@@ -81,7 +54,7 @@ const Partidas = () => {
                     {partida.ano} - Rodada {partida.rodada}
                   </h4>
                   <h3 className="partidas__item__header__date">
-                    {new Date(partida.data).toLocaleDateString('pt-BR', { timeZone: 'UTC' })}
+                    {new Date(partida.data).toLocaleDateString("pt-BR", { timeZone: "UTC" })}
                   </h3>
                 </div>
 
@@ -92,6 +65,18 @@ const Partidas = () => {
                       src={`/times/${partida.time_mandante}.png`}
                       alt={partida.time_mandante}
                     />
+                    {partida.tecnico_mandante && (
+                      <div className="partidas__item__team__info">
+                        <h1 className="partidas__item__team__info__title">TÉCNICO</h1>
+                        <h1 className="partidas__item__team__info__text">{partida.tecnico_mandante}</h1>
+                      </div>
+                    )}
+                    {partida.gols_jogadores_mandante && (
+                      <div className="partidas__item__team__info">
+                        <h1 className="partidas__item__team__info__title">GOLS</h1>
+                        <h2 className="partidas__item__team__info__text">{partida.gols_jogadores_mandante}</h2>
+                      </div>
+                    )}
                   </Grid>
 
                   <Grid size={{ xs: 4, sm: 4 }} className="partidas__item__score">
@@ -106,6 +91,18 @@ const Partidas = () => {
                       src={`/times/${partida.time_visitante}.png`}
                       alt={partida.time_visitante}
                     />
+                    {partida.tecnico_visitante && (
+                      <div className="partidas__item__team__info">
+                        <h1 className="partidas__item__team__info__title">TÉCNICO</h1>
+                        <h1 className="partidas__item__team__info__text">{partida.tecnico_visitante}</h1>
+                      </div>
+                    )}
+                    {partida.gols_jogadores_visitante && (
+                      <div className="partidas__item__team__info">
+                        <h1 className="partidas__item__team__info__title">GOLS</h1>
+                        <h2 className="partidas__item__team__info__text">{partida.gols_jogadores_visitante}</h2>
+                      </div>
+                    )}
                   </Grid>
                 </Grid>
 

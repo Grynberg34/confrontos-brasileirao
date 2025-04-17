@@ -95,7 +95,7 @@
     .partidas__item {
         position: relative;
         padding: 2vw;
-        padding-bottom: 4vh;
+        padding-bottom: 1vw;
         margin-bottom: 2vh;
         border-radius: 0.5vw;
 
@@ -127,7 +127,30 @@
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+                margin-bottom: 2vh;
                 width: 75%;
+            }
+
+            .partidas__item__team__info {
+                margin-bottom: 2vh;
+
+                .partidas__item__team__info__title {
+                    margin: 0;
+                    margin-bottom: 0.25vh;
+                    font-family: ofelia-display, sans-serif;
+                    font-size: 0.75vw;
+                    font-weight: 800;
+                    text-align: center;
+                }
+
+                .partidas__item__team__info__text {
+                    margin: 0;
+                    font-family: ofelia-display, sans-serif;
+                    font-size: 0.65vw;
+                    font-weight: 600;
+                    text-align: center;
+                    line-height: 1.5;
+                }
             }
 
         }
@@ -242,6 +265,24 @@
     
                 .partidas__item__team__img {
                     width: 100%;
+                    margin-bottom: 3vh;
+                }
+
+                .partidas__item__team__info {
+                    margin-bottom: 3vh;
+    
+                    .partidas__item__team__info__title {
+                        margin: 0;
+                        margin-bottom: 0.25vh;
+                        font-size: 3vw;
+                    }
+    
+                    .partidas__item__team__info__text {
+                        margin: 0;
+                        font-size: 2.75vw;
+                        font-weight: 600;
+                        line-height: 1.5;
+                    }
                 }
     
             }
