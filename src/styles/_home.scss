@@ -8,6 +8,22 @@
     padding-right: 30vw;
     background-color: colors.$lightYellow;
     min-height: 100vh;
+
+    .home__footer {
+        display: block;
+        margin: 4vh;
+        margin-bottom: 2vh;
+        font-family: ofelia-display, sans-serif;
+        font-size: 0.8vw;
+        font-weight: 400;
+        text-align: center;
+        color: colors.$spaceCadet;
+        text-decoration: none;
+
+        &:hover {
+            color: colors.$blue;
+        }
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -15,5 +31,10 @@
         padding-bottom: 20vh;
         padding-left: 10vw;
         padding-right: 10vw;
+
+        .home__footer {
+            margin-top: 6vh;
+            font-size: 3.5vw;
+        }
     }
 }

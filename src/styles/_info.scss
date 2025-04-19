@@ -3,7 +3,7 @@
 
 .info {
     padding: 2vw;
-    padding-top: 8vh;
+    padding-top: 4vh;
     border-radius: 0.25vw;
     border: 0.25vw solid colors.$olivine;
     background-color: colors.$blue;
@@ -60,6 +60,7 @@
         .info__section__title {
             display: block;
             margin: 0;
+            margin-bottom: -1vh;
             font-family: sporty-pro, sans-serif;
             font-weight: 600;
             font-style: normal;
@@ -87,6 +88,45 @@
         font-size: 0.9vw;
         color: colors.$white;
         margin-left: 0.25vw;
+    }
+
+    .info__stats {
+        margin-top: 2vh;
+
+        .info__stats__section {
+            margin-bottom: 1vh;
+
+            .info__stats__section__title {
+                margin-top: 0;
+                margin-bottom: 1vh;
+                font-family: sporty-pro, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 1vw;
+                color: colors.$yellow;
+                text-align: center;
+            }
+    
+            .info__stats__section__subtitle {
+                margin-top: 0;
+                margin-bottom: 2vh;
+                background-color: colors.$spaceCadet;
+                border-radius: 0.5vw;
+                font-family: sporty-pro, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 1.25vw;
+                color: colors.$olivine;
+                text-align: center;
+    
+                .info__stats__section__subtitle--span {
+                    font-size: 0.9vw;
+                    color: colors.$white;
+                    margin-left: 0.25vw;
+                }
+            }
+
+        }
     }
 
 }
@@ -148,6 +188,35 @@
             font-size: 2.75vw;
             margin-left: 0.25vw;
             letter-spacing: 0.2vw;
+        }
+
+        .info__stats {
+    
+            .info__stats__section {
+                margin-bottom: 4vh;
+    
+                .info__stats__section__title {
+                    margin: 0;
+                    font-size: 4vw;
+                }
+        
+                .info__stats__section__subtitle {
+                    margin-top: 0;
+                    margin-bottom: 2vh;
+                    border-radius: 2vw;
+                    font-size: 8vw;
+                    padding: 2vw;
+                    padding-bottom: 4vw;
+        
+                    .info__stats__section__subtitle--span {
+                        display: block;;
+                        font-size: 2.75vw;
+                        margin-left: 0.25vw;
+                        letter-spacing: 0.2vw;
+                    }
+                }
+    
+            }
         }
     
     }

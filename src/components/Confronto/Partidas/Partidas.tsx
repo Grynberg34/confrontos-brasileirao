@@ -44,7 +44,7 @@ const Partidas = () => {
 
       <Grid container spacing={4}>
         {filteredConfrontos.map((partida, index) => {
-          const youtubeSearchQuery = `https://www.youtube.com/results?search_query=campeonato+brasileiro+${partida.ano}+${new Date(partida.data).toLocaleDateString()}+rodada+${partida.rodada}+${partida.time_mandante}+${partida.gols_mandante}x${partida.gols_visitante}+${partida.time_visitante}`;
+          const youtubeSearchQuery = `https://www.youtube.com/results?search_query=campeonato+brasileiro+${partida.ano}+${new Date(partida.data).toLocaleDateString("pt-BR", { timeZone: "UTC" })}}+rodada+${partida.rodada}+${partida.time_mandante}+${partida.gols_mandante}x${partida.gols_visitante}+${partida.time_visitante}`;
 
           return (
             <Grid size={{ xs: 12, sm: 6 }} key={index}>

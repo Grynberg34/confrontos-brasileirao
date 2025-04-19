@@ -4,6 +4,7 @@ import React from "react";
 import Grid from '@mui/material/Grid';
 import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
+import InfoStats from '@/components/Confronto/Info/InfoStats';
 
 const Info = () => {
   const partidas = useSelector((state: RootState) => state.partidas);
@@ -35,7 +36,7 @@ const Info = () => {
 
         <Grid size={{ xs: 4, sm: 2 }}>
           <h1 className="info__versus">X</h1>
-          <h2 className="info__subtitle">{partidas.data.draws} <span className="info__subtitle--span">empates</span></h2>
+          <h2 className="info__subtitle">{partidas.data.empates} <span className="info__subtitle--span">empates</span></h2>
           <h2 className="info__subtitle">{partidas.data.confrontos.length} <span className="info__subtitle--span">jogos</span></h2>
         </Grid>
 
@@ -58,6 +59,10 @@ const Info = () => {
           </div>
         </Grid>
       </Grid>
+
+      <InfoStats />
+
+
     </div>
   );
 };
