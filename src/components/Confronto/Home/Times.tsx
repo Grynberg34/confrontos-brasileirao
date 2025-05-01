@@ -4,9 +4,10 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "@/store/store";
 import { fetchTimes, addTime } from "@/store/slices/timesSlice";
+import { AppDispatch } from "@/store/store";
 
 const Teams = () => {
-  const dispatch = useDispatch<typeof import("@/store/store").store.dispatch>();
+  const dispatch: AppDispatch = useDispatch();
   const times = useSelector((state: RootState) => state.times);
 
   useEffect(() => {

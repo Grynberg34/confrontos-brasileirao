@@ -1,0 +1,304 @@
+@use 'font';
+@use 'colors';
+
+.tabela {
+    margin: 0;
+    padding-top: 2vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 10vw;
+    background-color: colors.$lightYellow;
+    min-height: 100vh;
+
+    .tabela__header {
+
+        .tabela__header__ano {
+            align-items: center;
+            margin-bottom: 2vh;
+
+            .tabela__header__ano__arrow {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 2vh;
+                font-size: 3vw;
+                text-align: center;
+                color: colors.$green;
+                cursor: pointer;
+            }
+
+            .tabela__header__ano__title {
+                margin: 0;
+                font-family: sporty-pro-inline, sans-serif;
+                font-weight: 900;
+                font-style: normal;
+                font-size: 3vw;
+                text-align: center;
+                color: colors.$green;
+                user-select: none;
+            }
+        }
+
+        .tabela__header__rodada {
+            align-items: center;
+            margin-bottom: 2vh;
+
+            .tabela__header__rodada__arrow {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 1vh;
+                font-size: 2vw;
+                text-align: center;
+                color: colors.$blue;
+                cursor: pointer;
+            }
+
+            .tabela__header__rodada__title {
+                margin: 0;
+                font-family: sporty-pro-inline, sans-serif;
+                font-weight: 900;
+                font-style: normal;
+                font-size: 2vw;
+                text-align: center;
+                color: colors.$blue;
+                user-select: none;
+            }
+        }
+    }
+
+    .tabela__classificacao {
+        margin-top: 6vh;
+        margin-bottom: 10vh;
+        padding: 0.75vw;
+        border-radius: 0.5vw;
+        background-color: colors.$spaceCadet;
+
+        .tabela__classificacao__header {
+
+            .tabela__classificacao__header__title {
+                margin: 0;
+                font-family: sporty-pro, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 1vw;
+                color: colors.$olivine;
+                text-align: center;
+            }
+        }
+
+        .tabela__classificacao__rows {
+            margin-top: 0.1vh;
+            margin-right: 0.1vh;
+            display: flex;
+            align-items: center; 
+
+            &:nth-child(odd) {
+                background-color: colors.$blue;
+            }
+            
+            &:nth-child(even) {
+                background-color: colors.$spaceCadet;
+            }
+
+            .tabela__classificacao__rows__title {
+                display: block;
+                font-family: ofelia-display, sans-serif;
+                font-size: 0.75vw;
+                font-weight: 800;
+                color: colors.$yellow;
+                text-align: center;
+            }
+
+            .points {
+                color: colors.$white;
+            }
+            
+            .left {
+                text-align: left;
+            }
+
+            .tabela__classificacao__rows__img {
+                display: block;
+                width: 40%;
+                margin: auto;
+                align-self: center;
+            }
+        }
+
+        .center {
+            text-align: center;
+        }
+    }
+
+    .tabela__jogos {
+
+        .tabela__jogos__title {
+            margin: 0;
+            margin-bottom: 4vh;
+            font-family: sporty-pro-inline, sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 2vw;
+            text-align: center;
+            color: colors.$spaceCadet;
+        }
+
+        .tabela__jogos__jogo {
+            position: relative;
+            display: flex;
+            padding: 1vw;
+            margin-bottom: 1vh;
+            border-radius: 0.5vw;
+            align-items: center; 
+            background-color: colors.$blue;
+
+            &.odd {
+                background-color: colors.$blue;
+            }
+          
+            &.even {
+                background-color: colors.$spaceCadet;
+            }
+
+            .tabela__jogos__jogo__img {
+                display: block;
+                margin: auto;
+                align-self: center;
+                width: 100%;
+            }
+    
+            .tabela__jogos__jogo__placar {
+                margin: 0;
+                margin-top: 2vh;
+                font-family: sporty-pro-inline, sans-serif;
+                font-weight: 900;
+                font-style: normal;
+                font-size: 2vw;
+                text-align: center;
+                color: colors.$yellow;
+                user-select: none;
+            }
+
+            .tabela__jogos__jogo__youtube {
+                position: absolute;
+                top: 8%;
+                left: 30%;
+                width: 40%;
+                color: colors.$olivine;
+                font-size: 1.75vw;
+
+                &:hover {
+                    color: colors.$lightYellow;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .tabela {
+        padding-top: 2vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 20vh;
+    
+        .tabela__header {
+    
+            .tabela__header__ano {
+                margin-bottom: 3vh;
+    
+                .tabela__header__ano__arrow {
+                    padding-top: 1vh;
+                    font-size: 8vw;
+                }
+    
+                .tabela__header__ano__title {
+                    font-size: 8vw;
+                }
+            }
+    
+            .tabela__header__rodada {
+                margin-bottom: 2vh;
+    
+                .tabela__header__rodada__arrow {
+                    padding-top: 0.75vh;
+                    font-size: 6vw;
+                }
+    
+                .tabela__header__rodada__title {
+                    font-size: 6vw;
+                }
+            }
+        }
+    
+        .tabela__classificacao {
+            margin-top: 6vh;
+            margin-bottom: 10vh;
+            padding: 3vw;
+            border-radius: 2vw;
+    
+            .tabela__classificacao__header {
+    
+                .tabela__classificacao__header__title {
+                    font-size: 2.5vw;
+                }
+            }
+    
+            .tabela__classificacao__rows {
+                margin-top: 0.75vh;
+                margin-right: 0.75vh;
+    
+                .tabela__classificacao__rows__title {
+                    font-size: 1.75vw;
+                }
+
+    
+                .tabela__classificacao__rows__img {
+                    width: 70%;
+                }
+            }
+
+        }
+    
+        .tabela__jogos {
+    
+            .tabela__jogos__title {
+                margin-bottom: 4vh;
+                font-size: 5vw;
+            }
+    
+            .tabela__jogos__jogo {
+                padding: 3vw;
+                padding-bottom: 2vh;
+                margin-bottom: 1vh;
+                border-radius: 2vw;
+
+    
+                .tabela__jogos__jogo__img {
+                    margin-top: 2vh;
+                    width: 100%;
+                }
+        
+                .tabela__jogos__jogo__placar {
+                    margin: 0;
+                    margin-top: 2.5vh;
+                    font-size: 4vw;
+                }
+    
+                .tabela__jogos__jogo__youtube {
+                    top: 10%;
+                    left: 30%;
+                    width: 40%;
+                    font-size: 6vw;
+    
+                    &:hover {
+                        color: colors.$olivine;
+                    }
+                }
+            }
+        }
+    }
+
+}

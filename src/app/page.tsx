@@ -1,18 +1,20 @@
 "use client";
 
 import React from "react";
-import { useSelector } from "react-redux";
-import { RootState } from "@/store/store";
-import Home from "@/components/Home/Home";
-import Confronto from "@/components/Confronto/Confronto";
+import Header from "@/components/Header/Header";
+import Tools from "@/components//Home/Tools";
 
 export default function App() {
 
-  const partidas = useSelector((state: RootState) => state.partidas);
-
   return (
-    <div>
-      {partidas.data === null ? <Home /> : <Confronto />}
+    <div className="home">
+      
+      <Header />
+
+      <Tools />
+
+      <a className='home__footer' href="https://www.linkedin.com/in/francisco-grynberg/" target="_blank" rel="noreferrer">Desenvolvido por <strong>Francisco Grynberg</strong></a>
+
     </div>
   );
 }

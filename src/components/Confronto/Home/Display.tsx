@@ -7,9 +7,10 @@ import { RootState } from "@/store/store";
 import { resetTimes } from "@/store/slices/timesSlice";
 import { fetchPartidas } from "@/store/slices/partidasSlice";
 import CircularProgress from '@mui/material/CircularProgress';
+import { AppDispatch } from "@/store/store";
 
 const Display = () => {
-  const dispatch = useDispatch<typeof import("@/store/store").store.dispatch>();
+  const dispatch: AppDispatch = useDispatch();
   const times = useSelector((state: RootState) => state.times);
 
   const [loading, setLoading] = useState(false);

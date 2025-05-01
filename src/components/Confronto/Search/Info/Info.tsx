@@ -4,7 +4,7 @@ import React from "react";
 import Grid from '@mui/material/Grid';
 import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
-import InfoStats from '@/components/Confronto/Info/InfoStats';
+import InfoStats from '../Info/InfoStats'
 
 const Info = () => {
   const partidas = useSelector((state: RootState) => state.partidas);

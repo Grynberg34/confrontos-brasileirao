@@ -2,8 +2,29 @@
 @use 'colors';
 
 .header {
-    padding-top: 5vh;
+    position: relative;
+    padding-top: 4vh;
     margin-bottom: 4vh;
+
+    .header__home {
+        position: absolute;
+        left: 0;
+        top: 20%;
+
+        .header__home__icon {
+            color: colors.$green;
+            font-size: 2vw;
+
+            &:hover {
+                color: colors.$olivine;
+            }
+        }
+
+    }
+
+    .header__link {
+        text-decoration: none;
+    }
 
     .header__title {
         margin-top: 0;
@@ -14,6 +35,7 @@
         font-size: 2.25vw;
         text-align: center;
         color: colors.$spaceCadet;
+        user-select: none;
     }
 
     .header__subtitle {
@@ -24,7 +46,7 @@
         font-size: 1.25vw;
         text-align: center;
         color: colors.$blue;
-
+        user-select: none;
     }
 }
 
@@ -33,6 +55,21 @@
     .header {
         padding-top: 10vh;
         margin-bottom: 6vh;
+
+        .header__home {
+            left: 0;
+            top: 12.5%;
+    
+            .header__home__icon {
+                color: colors.$green;
+                font-size: 4vh;
+    
+                &:hover {
+                    color: colors.$green;
+                }
+            }
+    
+        }
     
         .header__title {
             margin-top: 0;

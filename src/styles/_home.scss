@@ -3,7 +3,6 @@
 
 .home {
     margin: 0;
-    padding-bottom: 10vh;
     padding-left: 30vw;
     padding-right: 30vw;
     background-color: colors.$lightYellow;
@@ -13,6 +12,7 @@
         display: block;
         margin: 4vh;
         margin-bottom: 2vh;
+        margin-top: 8vh;
         font-family: ofelia-display, sans-serif;
         font-size: 0.8vw;
         font-weight: 400;
@@ -33,7 +33,7 @@
         padding-right: 10vw;
 
         .home__footer {
-            margin-top: 6vh;
+            margin-top: 12vh;
             font-size: 3.5vw;
         }
     }

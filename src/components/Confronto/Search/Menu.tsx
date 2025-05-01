@@ -1,4 +1,5 @@
 import Grid from '@mui/material/Grid';
+import Link from "next/link";
 
 const Menu = () => {
 
@@ -11,7 +12,7 @@ const Menu = () => {
 
       <Grid container spacing={2}>
         <Grid size={{ xs: 7, sm: 8 }}>
-          <h1 className="menu__title">Confrontos Corridos</h1>
+          <Link className='menu__link' href="/"><h1 className="menu__title">Confrontos Corridos</h1></Link>
         </Grid>
 
 

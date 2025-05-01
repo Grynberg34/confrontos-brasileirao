@@ -1,0 +1,20 @@
+@use 'font';
+@use 'colors';
+
+.confrontohome {
+    margin: 0;
+    padding-bottom: 10vh;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    background-color: colors.$lightYellow;
+    min-height: 100vh;
+
+}
+
+@media only screen and (max-width: 767px) {
+    .confrontohome {
+        padding-bottom: 20vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}
