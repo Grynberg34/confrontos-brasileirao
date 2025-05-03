@@ -32,16 +32,35 @@
         
         .tools__link__text {
             display: flex;
+            margin: 0;
             padding-top: 8vh;
             padding-bottom: 4vh;
             padding-left: 2vw;
             padding-right: 2vw;
-            color: colors.$lightYellow;
+            color: colors.$olivine;
             font-size: 1.15vw;
             line-height: 2;
             text-align: center;
         }
 
+    }
+
+    .special {
+        background-color: colors.$olivine;
+
+        &:hover {
+            background-color: colors.$green;
+        }
+
+        .tools__link__title {
+            background-color: colors.$blue;
+            color: colors.$olivine;
+
+        }
+
+        .tools__link__text {
+            color: colors.$blue;
+        }
     }
 
 }
@@ -53,8 +72,7 @@
     
         .tools__link {
             border-radius: 2vw;
-    
-    
+            
             .tools__link__title {
                 padding-top: 1vh;
                 padding-bottom: 1vh;
@@ -63,7 +81,7 @@
                 font-size: 4vw;
                 border-top-left-radius: 2vw;
                 border-top-right-radius: 2vw;
-    
+                
             }
             
             .tools__link__text {

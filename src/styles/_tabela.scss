@@ -10,6 +10,21 @@
     background-color: colors.$lightYellow;
     min-height: 100vh;
 
+        .tabela__loading {
+        padding-top: 30vh;
+        padding-left: 10vw;
+        width: 40vw;
+        color: colors.$spaceCadet;
+
+        .tabela__loading__icon {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 2vw !important;
+            height: 2vw !important;
+        }
+    }
+
     .tabela__header {
 
         .tabela__header__ano {

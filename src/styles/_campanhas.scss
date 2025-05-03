@@ -1,0 +1,315 @@
+@use 'font';
+@use 'colors';
+
+.campanhas {
+    margin: 0;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 20vh;
+    background-color: colors.$olivine;
+    min-height: 100vh;
+
+    .campanhas__loading {
+        padding-top: 30vh;
+        padding-left: 20vw;
+        width: 40vw;
+        color: colors.$spaceCadet;
+
+        .campanhas__loading__icon {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 2vw !important;
+            height: 2vw !important;
+        }
+    }
+
+
+    .campanhas__filters {
+        padding-top: 2vh;
+        padding-bottom: 4vh;
+
+        .campanhas__filters__checkbox {
+            margin: 0;
+            font-family: sporty-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1vw;
+            color: colors.$spaceCadet;
+            cursor: pointer;
+        }
+
+        .campanhas__filters__input {
+            margin-right: 0.5vw;
+            cursor: pointer;
+        }
+
+        .campanhas__filters__title {
+            margin: 0;
+            font-family: sporty-pro, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.25vw;
+            color: colors.$spaceCadet;
+            text-align: right;
+        }
+
+        .campanhas__filters__select {
+            display: block;
+            width: 100%;
+            padding: 0.25vw;
+            font-family: sporty-pro, sans-serif;
+            text-align: center;
+            font-size: 0.75vw;
+            color: colors.$spaceCadet;
+            background-color: colors.$lightYellow;
+            border: none;
+            border-radius: 0.5vw;
+            appearance: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                border-color: colors.$olivine;
+            }
+
+            &:focus {
+                outline: none;
+                border-color: colors.$olivine;
+                box-shadow: 0 0 5px colors.$olivine;
+            }
+        }
+
+    }
+
+    .campanhas__table {
+        padding-bottom: 4vh;
+        border-radius: 0.5vw;
+        background-color: colors.$spaceCadet;
+
+        .campanhas__table__header {
+            padding-left: 1vw;
+            padding-right: 1vw;
+            padding-top: 2vh;
+            padding-bottom: 1vh;
+            background-color: colors.$green;
+            border-top-left-radius: 0.5vw;
+            border-top-right-radius: 0.5vw;
+    
+            .campanhas__table__header__title {
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+                margin: 0;
+                font-family: sporty-pro, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 1vw;
+                color: colors.$spaceCadet;
+                cursor: pointer;
+                text-align: center;
+                
+    
+                &:hover {
+                    color: colors.$white;
+                }
+            }
+    
+            .active {
+                color: colors.$white;
+                margin-top: -0.5vh;
+            }
+    
+            .time {
+                text-align: center;
+            }
+    
+            .campanhas__table__header__arrow {
+                font-size: 2vw;
+            }
+        }
+    
+        .campanhas__table__rows {
+            padding-left: 1vw;
+            padding-right: 1vw;
+            padding-top: 0.2vh;
+            padding-bottom: 0.2vh;
+            background-color: colors.$spaceCadet;
+    
+            &:nth-child(odd) {
+                background-color: colors.$blue;
+            }
+            
+            &:nth-child(even) {
+                background-color: colors.$spaceCadet;
+            }
+    
+            .campanhas__table__rows__title {
+                display: block;
+                font-family: ofelia-display, sans-serif;
+                font-size: 0.75vw;
+                font-weight: 800;
+                color: colors.$yellow;
+                text-align: center;
+            }
+
+            .ano {
+                color: colors.$white;
+                font-weight: 500;
+            }
+    
+            .index {
+                color: colors.$white;
+            }
+    
+            .campanhas__table__rows__team {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+    
+                .campanhas__table__rows__team__img {
+                    display: inline-block;
+                    margin-top: 0.25vh;
+                    margin-right: 0.5vw;
+                    width: 10%;
+                }
+    
+                .campanhas__table__rows__team__title {
+                    display: inline-block;
+                    font-family: ofelia-display, sans-serif;
+                    font-size: 0.75vw;
+                    font-weight: 800;
+                    color: colors.$yellow;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .campanhas {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 20vh;
+    
+        .campanhas__loading {
+            padding-top: 30vh;
+            padding-left: 20vw;
+            width: 40vw;
+
+            .campanhas__loading__icon {
+                width: 2vw !important;
+                height: 2vw !important;
+            }
+        }
+    
+    
+        .campanhas__filters {
+            padding-top: 2vh;
+            padding-bottom: 4vh;
+    
+            .campanhas__filters__checkbox {
+                display: inline-block;
+                font-size: 4vw;
+                margin-bottom: 3vh;
+            }
+    
+            .campanhas__filters__input {
+                margin-right: 2vw;
+            }
+    
+            .campanhas__filters__title {
+                font-size: 4vw;
+            }
+    
+            .campanhas__filters__select {
+                width: 100%;
+                padding: 1vw;
+                font-size: 2vw;
+                border-radius: 2vw;
+    
+                &:hover {
+                    border-color: colors.$olivine;
+                }
+    
+                &:focus {
+                    outline: none;
+                    border-color: colors.$olivine;
+                    box-shadow: 0 0 5px colors.$olivine;
+                }
+            }
+    
+        }
+    
+        .campanhas__table {
+            padding-bottom: 2vh;
+            border-radius: 2vw;
+    
+            .campanhas__table__header {
+                padding-left: 2vw;
+                padding-right: 2vw;
+                padding-top: 2vh;
+                padding-bottom: 1vh;
+                border-top-left-radius: 2vw;
+                border-top-right-radius: 2vw;
+        
+                .campanhas__table__header__title {
+                    font-size: 3vw;
+                    
+                    &:hover {
+                        color: colors.$white;
+                    }
+                }
+        
+                .active {
+                    margin-top: -0.25vh;
+                }
+        
+                .campanhas__table__header__arrow {
+                    font-size: 6vw;
+                }
+            }
+        
+            .campanhas__table__rows {
+                padding-left: 2vw;
+                padding-right: 2vw;
+                padding-top: 0.8vh;
+                padding-bottom: 0.8vh;
+        
+                .campanhas__table__rows__title {
+                    margin-top: 1.5vh;
+                    font-size: 2vw;
+                    font-weight: 800;
+                }
+    
+                .ano {
+                    display: block;
+                    font-weight: 500;
+                    margin-top: 0.25vh;
+                }
+        
+        
+                .campanhas__table__rows__team {
+        
+                    .campanhas__table__rows__team__img {
+                        margin-top: 0.1vh;
+                        margin-right: 2vw;
+                        width: 30%;
+                    }
+        
+                    .campanhas__table__rows__team__title {
+                        font-size: 1.75vw;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+
+}

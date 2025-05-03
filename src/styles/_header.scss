@@ -12,11 +12,11 @@
         top: 20%;
 
         .header__home__icon {
-            color: colors.$green;
+            color: colors.$blue;
             font-size: 2vw;
 
             &:hover {
-                color: colors.$olivine;
+                color: colors.$blue;
             }
         }
 
@@ -61,11 +61,11 @@
             top: 12.5%;
     
             .header__home__icon {
-                color: colors.$green;
+                color: colors.$white;
                 font-size: 4vh;
     
                 &:hover {
-                    color: colors.$green;
+                    color: colors.$white;
                 }
             }
     
