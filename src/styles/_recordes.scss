@@ -1,0 +1,418 @@
+@use 'font';
+@use 'colors';
+
+.recordes {
+    margin: 0;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 20vh;
+    background-color: colors.$spaceCadet;
+    min-height: 100vh;
+
+    .recordes__loading {
+        padding-top: 30vh;
+        padding-left: 10vw;
+        width: 40vw;
+        color: colors.$lightYellow;
+
+        .recordes__loading__icon {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 2vw !important;
+            height: 2vw !important;
+        }
+    }
+    
+    .recordes__title {
+        margin: 0;
+        margin-bottom: 6vh;
+        margin-top: 8vh;
+        padding-top: 8vh;
+        font-family: sporty-pro-inline, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 2vw;
+        text-align: center;
+        color: colors.$white;
+        border-top: 0.25vw solid colors.$white;
+        user-select: none;
+    }
+
+    .recordes__performance {
+        padding: 1vw;
+        padding-bottom: 2vw;
+        border-radius: 0.5vw;
+        background-color: colors.$blue;
+
+        .recordes__performance__title {
+            margin-bottom: 4vh;
+            font-family: sporty-pro-inline, sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 1.75vw;
+            text-align: center;
+            color: colors.$lightYellow;
+        }
+
+        .recordes__performance__img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .recordes__performance__time {
+            margin-bottom: 2vh;
+            font-family: sporty-pro, sans-serif;
+            font-weight: 400;
+            font-size: 1.25vw;
+            text-align: center;
+            color: colors.$lightYellow;
+        }
+
+        .recordes__performance__ano {
+            display: inline-block;
+            margin-left: 0.5vw;
+            font-style: italic;
+        }
+
+        .recordes__performance__dados {
+            list-style: none;
+            padding: 0;
+
+            .recordes__performance__dados__item {
+                padding-top: 1.5vh;
+                font-family: ofelia-display, sans-serif;
+                font-weight: 800;
+                font-size: 0.75vw;
+                color: colors.$white;
+                text-align: center;
+            }
+        }
+
+    }
+
+    .recordes__goleadas {
+        margin-top: 4vh;
+        margin-bottom: 12vh;
+
+        .recordes__goleadas__jogo {
+            position: relative;
+            padding: 2vw;
+            background-color: colors.$blue;
+            border-radius: 0.5vw;
+
+            .recordes__goleadas__jogo__data {
+                margin: 0;
+                font-family: sporty-pro, sans-serif;
+                font-weight: 400;
+                font-size: 0.75vw;
+                font-style: italic;
+                color: colors.$white;
+            }
+
+            .recordes__goledas__jogo__campeonato {
+                margin-top: 1vh;
+                margin-bottom: 2vh;
+                font-family: sporty-pro, sans-serif;
+                font-weight: 600;
+                font-size: 1vw;
+                color: colors.$white;
+            }
+
+            .recordes__goleadas__jogo__img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 60%;
+            }
+
+            .recordes__goleadas__jogo__placar {
+                margin: 0;
+                margin-top: 2vh;
+                font-family: sporty-pro-inline, sans-serif;
+                font-weight: 900;
+                font-style: normal;
+                font-size: 2vw;
+                text-align: center;
+                color: colors.$lightYellow;
+            }
+
+            .recordes__goleadas__jogo__youtube {
+                position: absolute;
+                top: 12.5%;
+                right: 15%;
+                color: colors.$lightYellow;
+                font-size: 3vw;
+
+                &:hover {
+                    color: colors.$white;
+                }
+            }
+        }
+    }
+
+    .recordes__sequencias {
+        margin-top: 12vh;
+
+        .recordes__sequencias__title {
+            margin-bottom: 4vh;
+            font-family: sporty-pro, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 1.75vw;
+            text-align: center;
+            color: colors.$lightYellow;
+        }
+        
+        .recordes__sequencias__sequencia {
+            padding: 2vw;
+            border-radius: 0.5vw;
+            background-color: colors.$blue;
+            margin-bottom: 4vh;
+
+            .recordes__sequencias__sequencia__numero {
+                margin: 0;
+                margin-bottom: 2vh;
+                font-family: sporty-pro, sans-serif;
+                font-weight: 900;
+                font-style: normal;
+                font-size: 2vw;
+                text-align: center;
+                color: colors.$lightYellow;
+            }
+
+            .recordes__sequencias__sequencia__time {
+                margin-top: 0;
+                margin-bottom: 2vh;
+                font-family: sporty-pro, sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                font-size: 1vw;
+                text-align: center;
+                color: colors.$white;
+            }
+            .recordes__sequencias__sequencia__img {
+                display: block;
+                width: 25%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 8vh;
+            }
+
+
+
+            .recordes__sequencias__sequencia__jogo {
+                padding: 1vw;
+                background-color: colors.$spaceCadet;
+                border-radius: 0.5vw;
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+
+                .recordes__sequencias__sequencia__jogo__rodada {
+                    margin: 0;
+                    font-family: sporty-pro, sans-serif;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-size: 1vw;
+                    color: colors.$white;
+                }
+
+                .recordes__sequencias__sequencia__jogo__img {
+                    display: block;
+                    width: 50%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }
+
+                .recordes__sequencias__sequencia__jogo__placar {
+                    margin: 0;
+                    margin-top: 0.5vh;
+                    font-family: sporty-pro, sans-serif;
+                    font-weight: 900;
+                    font-style: normal;
+                    font-size: 1vw;
+                    color: colors.$white;
+                    text-align: center;
+                }
+
+                .recordes__sequencias__sequencia__jogo__youtube {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-size: 2vw;
+                    color: colors.$white;
+
+                    &:hover {
+                        color: colors.$lightYellow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .recordes {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-bottom: 20vh;
+    
+        .recordes__loading {
+            padding-top: 30vh;
+            padding-left: 10vw;
+            width: 40vw;
+    
+            .recordes__loading__icon {
+                width: 2vw !important;
+                height: 2vw !important;
+            }
+        }
+        
+        .recordes__title {
+            margin-bottom: 6vh;
+            margin-top: 8vh;
+            padding-top: 8vh;
+            font-size: 6vw;
+            border-top: 1vw solid colors.$white;
+        }
+    
+        .recordes__performance {
+            padding: 4vw;
+            border-radius: 2vw;
+            margin-bottom: 4vh;
+    
+            .recordes__performance__title {
+                margin-bottom: 4vh;
+                font-size: 5vw;
+            }
+    
+            .recordes__performance__img {
+                width: 50%;
+            }
+    
+            .recordes__performance__time {
+                margin-bottom: 2vh;
+                font-size: 3.5vw;
+            }
+    
+            .recordes__performance__ano {
+                margin-left: 2vw;
+            }
+    
+            .recordes__performance__dados {
+    
+                .recordes__performance__dados__item {
+                    padding-top: 1.5vh;
+                    font-size: 2.5vw;
+                }
+            }
+    
+        }
+    
+        .recordes__goleadas {
+            margin-top: 4vh;
+            margin-bottom: 12vh;
+    
+            .recordes__goleadas__jogo {
+                padding: 8vw;
+                border-radius: 2vw;
+    
+                .recordes__goleadas__jogo__data {
+                    font-size: 2.5vw;
+                }
+    
+                .recordes__goledas__jogo__campeonato {
+                    margin-top: 1vh;
+                    margin-bottom: 2vh;
+                    font-size: 3.5vw;
+                }
+    
+                .recordes__goleadas__jogo__img {
+                    width: 100%;
+                }
+    
+                .recordes__goleadas__jogo__placar {
+                    margin-top: 3vh;
+                    font-size: 6vw;
+                }
+    
+                .recordes__goleadas__jogo__youtube {
+                    top: 12.5%;
+                    right: 15%;
+                    font-size: 8vw;
+    
+                    &:hover {
+                        color: colors.$white;
+                    }
+                }
+            }
+        }
+    
+        .recordes__sequencias {
+            margin-top: 8vh;
+    
+            .recordes__sequencias__title {
+                margin-bottom: 4vh;
+                font-size: 5vw;
+            }
+            
+            .recordes__sequencias__sequencia {
+                padding: 6vw;
+                border-radius: 2vw;
+                margin-bottom: 4vh;
+    
+                .recordes__sequencias__sequencia__numero {
+                    margin: 0;
+                    margin-bottom: 2vh;
+                    font-size: 6vw;
+                }
+    
+                .recordes__sequencias__sequencia__time {
+                    margin-bottom: 2vh;
+                    font-size: 4vw;
+                }
+                .recordes__sequencias__sequencia__img {
+                    width: 50%;
+                    margin-bottom: 6vh;
+                }
+    
+    
+    
+                .recordes__sequencias__sequencia__jogo {
+                    padding: 4vw;
+                    border-radius: 2vw;
+                    margin: 0;
+    
+                    .recordes__sequencias__sequencia__jogo__rodada {
+                        margin: 0;
+                        margin-top: 0.5vh;
+                        font-size: 2.5vw;
+                    }
+    
+                    .recordes__sequencias__sequencia__jogo__img {
+                        width: 80%;
+                    }
+    
+                    .recordes__sequencias__sequencia__jogo__placar {
+                        margin: 0;
+                        margin-top: 0.5vh;
+                        font-size: 2.75vw;
+                    }
+    
+                    .recordes__sequencias__sequencia__jogo__youtube {
+                        font-size: 6vw;
+    
+                        &:hover {
+                            color: colors.$white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

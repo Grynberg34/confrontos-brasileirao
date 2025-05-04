@@ -1,9 +1,11 @@
-export const handleSort = (
-    key: string,
-    sortConfig: { key: string; direction: string },
-    setSortConfig: (config: { key: string; direction: string }) => void,
-    sortedData: any[],
-    setSortedData: (data: any[]) => void
+import { Campanha } from "@/store/types/campanhas";
+
+export const handleSort = <K extends keyof Campanha>(
+    key: K,
+    sortConfig: { key: K; direction: string },
+    setSortConfig: (config: { key: K; direction: string }) => void,
+    sortedData: Campanha[],
+    setSortedData: (data: Campanha[]) => void
   ) => {
     const direction =
       sortConfig.key === key && sortConfig.direction === "desc" ? "asc" : "desc";

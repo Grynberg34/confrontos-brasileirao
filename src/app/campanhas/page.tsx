@@ -9,6 +9,7 @@ import Filters from "@/components/Campanha/Filters";
 import TableHeader from "@/components/Campanha/TableHeader";
 import TableRows from "@/components/Campanha/TableRows";
 import CircularProgress from "@mui/material/CircularProgress";
+import { Campanha } from "@/store/types/campanhas";
 
 const TabelaCampanhas: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -16,7 +17,7 @@ const TabelaCampanhas: React.FC = () => {
     (state: RootState) => state.campanhas
   );
 
-  const [sortedData, setSortedData] = useState<any[]>([]);
+  const [sortedData, setSortedData] = useState<Campanha[]>([]);
   const [sortConfig, setSortConfig] = useState({
     key: "aproveitamento",
     direction: "desc",
@@ -63,7 +64,7 @@ const TabelaCampanhas: React.FC = () => {
     setSortedData(filtered);
   }, [campanhas, filter2025, selectedYear, selectedTeam, sortConfig]);
 
-  if (loading)
+  if (loading) {
     return (
       <div className="campanhas">
         <Header />
@@ -75,6 +76,7 @@ const TabelaCampanhas: React.FC = () => {
         </div>
       </div>
     );
+  }
 
   const availableYears = [
     ...new Set(campanhas.map((campanha) => campanha.ano)),

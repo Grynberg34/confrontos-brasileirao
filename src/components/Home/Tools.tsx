@@ -9,24 +9,28 @@ const Tools = () => {
             title: 'Time x time',
             text: 'Histórico de confrontos',
             className: 'tools__link',
+            order: { xs: 1, sm: 1 }
         },
         {
             href: '/tabela',
             title: '2023-2025',
             text: 'Tabela rodada a rodada',
             className: 'tools__link special',
+            order: { xs: 2, sm: 2 }
         },
         {
             href: '/campanhas',
-            title: '2023-2025',
+            title: 'Todas as edições',
             text: 'Ranking de campanhas',
             className: 'tools__link special',
+            order: { xs: 4, sm: 3 }
         },
         {
-            href: '/campanhas',
-            title: 'Históricas e ativas',
-            text: 'Sequências invictas',
+            href: '/recordes',
+            title: 'Todas as edições',
+            text: 'Recordes coletivos',
             className: 'tools__link',
+            order: { xs: 3, sm: 4 }
         },
     ];
 
@@ -34,7 +38,7 @@ const Tools = () => {
         <div className="tools">
             <Grid container spacing={4}>
                 {links.map((link, index) => (
-                    <Grid size={{ xs: 12, sm: 6 }} key={index}>
+                    <Grid size={{ xs: 12, sm: 6 }} key={index} order={link.order}>
                         <Link className={link.className} href={link.href}>
                             <span className="tools__link__title">{link.title}</span>
                             <h1 className={`tools__link__text ${index === 1 || index === 2 ? 'green' : ''}`}>

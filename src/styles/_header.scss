@@ -50,6 +50,28 @@
     }
 }
 
+.header--alternate {
+
+    .header__home {
+        .header__home__icon {
+            color: colors.$lightYellow;
+            font-size: 2vw;
+    
+            &:hover {
+                color: colors.$white;
+            }
+        }
+    }
+    
+    .header__title {
+        color: colors.$lightYellow;
+    }
+
+    .header__subtitle {
+        color: colors.$yellow;
+    }
+}
+
 @media only screen and (max-width: 767px) {
 
     .header {

@@ -13,3 +13,9 @@ export interface Campanha {
     aproveitamento: number;
     posicaoFinal: number;
 }
+
+export interface CampanhasState {
+  campanhas: Campanha[];
+  loading: boolean;
+  error: string | null;
+}

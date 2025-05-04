@@ -1,12 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { Campanha } from '@/store/types/campanhas';
+import {  CampanhasState } from '@/store/types/campanhas';
 
-interface CampanhasState {
-  campanhas: Campanha[];
-  loading: boolean;
-  error: string | null;
-}
 
 const initialState: CampanhasState = {
   campanhas: [],
