@@ -13,7 +13,7 @@ const Tools = () => {
         },
         {
             href: '/tabela',
-            title: '2023-2025',
+            title: '2003-2025',
             text: 'Tabela rodada a rodada',
             className: 'tools__link special',
             order: { xs: 2, sm: 2 }

@@ -16,7 +16,7 @@
             font-size: 2vw;
 
             &:hover {
-                color: colors.$blue;
+                color: colors.$spaceCadet;
             }
         }
 
@@ -83,12 +83,7 @@
             top: 12.5%;
     
             .header__home__icon {
-                color: colors.$white;
                 font-size: 4vh;
-    
-                &:hover {
-                    color: colors.$white;
-                }
             }
     
         }

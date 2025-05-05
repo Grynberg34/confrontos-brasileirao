@@ -1,16 +1,45 @@
 # Confrontos Corridos
 
-A web application built with React, Redux, Next.js, and TypeScript that allows users to compare head-to-head matchups between two clubs in the Brazilian league (Brasileirão) during the points-based era (2003–2025). Simply select any two teams to view all matches between them, along with detailed stats such as wins, draws, losses, goals scored, goals conceded, and overall performance. Perfect for fans, analysts, and anyone curious about Brazilian football data.
+A web application built with React, Redux, Next.js, and TypeScript that provides comprehensive data and insights about the Brazilian league (Brasileirão) during the points-based era (2003–2025). Users can explore head-to-head matchups, league tables, team campaigns, and collective records with advanced filtering, sorting, and visualization options.
+
+---
+
+## Demo
+
+https://confrontos-corridos.site/
 
 ---
 
 ## Features
 
-- **Dynamic Sorting**: Sort matches by ascending or descending order.
-- **Team Selection**: Select teams dynamically and prevent duplicate selections.
-- **Responsive Design**: Optimized for mobile and desktop devices.
-- **YouTube Integration**: Generate YouTube search links for match highlights.
-- **State Management**: Powered by Redux Toolkit for efficient state handling.
+- **Head-to-Head Matchups**:
+  - Compare two teams' historical confrontations, including wins, draws, losses, goals scored, and goals conceded.
+  - Generate YouTube search links for match highlights.
+
+- **League Table**:
+  - View the league table for any season from 2023 to 2025.
+  - Explore match results for each round.
+
+- **Team Campaigns**:
+  - Analyze team performances across all seasons, including points, wins, draws, losses, and goal statistics.
+  - Filter campaigns by year or team.
+  - Sort campaigns dynamically by any column.
+
+- **Collective Records**:
+  - Discover the best performances in league history, including:
+    - Best first and second halves.
+    - Best home and away seasons.
+    - Biggest blowout games (by goal difference).
+  - Explore streaks such as longest winning, unbeaten, and losing streaks.
+
+  - **YouTube Highlights**:
+  - Click on the YouTube icon next to matches to automatically search for match highlights on YouTube.
+
+- **Responsive Design**:
+  - Optimized for mobile and desktop devices.
+
+- **State Management**:
+  - Powered by Redux Toolkit for efficient state handling.
 
 ---
 
@@ -66,14 +95,24 @@ A web application built with React, Redux, Next.js, and TypeScript that allows u
 confrontos-corridos/
 ├── public/                # Static assets (images, icons, etc.)
 ├── src/
+│   ├── app/               # Next.js pages
+│   │   ├── campanhas/     # Team campaigns page
+│   │   ├── confrontos/    # Head-to-head matchups page
+│   │   ├── recordes/      # Collective records page
+│   │   ├── tabela/        # League table page
 │   ├── components/        # React components
-│   │   ├── Home/          # Components for the home page
+│   │   ├── Campanha/      # Components for campaigns
 │   │   ├── Confronto/     # Components for confrontations
-│   ├── styles/            # Sass stylesheets
+│   │   ├── Header/        # Header component
+│   │   ├── Home/          # Components for the home page
+│   │   ├── Recorde/       # Components for records
+│   │   ├── Tabela/        # Components for the league table
 │   ├── store/             # Redux store and slices
-│   ├── pages/             # Next.js pages
-├── package.json           # Project dependencies and scripts
-├── README.md              # Project documentation
+│   │   ├── slices/        # Redux slices for state management
+│   │   ├── types/         # TypeScript types for state
+│   ├── styles/            # Sass stylesheets
+├── [package.json]         # Project dependencies and scripts
+├── [README.md]            # Project documentation
 ```
 
 ---

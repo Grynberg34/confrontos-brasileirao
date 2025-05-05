@@ -5,7 +5,7 @@ import "../styles/global.scss";
 export const metadata: Metadata = {
   title: "Confrontos Corridos",
   description:
-    "Aplicação web desenvolvida com React, Redux, Next.js e TypeScript, que permite comparar o histórico de confrontos entre dois clubes no Campeonato Brasileiro por pontos corridos (de 2003 a 2025). Basta selecionar dois times para visualizar todos os jogos entre eles, além de estatísticas detalhadas como número de vitórias, empates, derrotas, gols marcados, gols sofridos e aproveitamento. Ideal para torcedores, analistas e curiosos por dados do futebol brasileiro.",
+    "Uma aplicação web desenvolvida com React, Redux, Next.js e TypeScript que oferece dados e insights completos sobre o Campeonato Brasileiro durante a era de pontos corridos (2003–2025). Os usuários podem explorar confrontos diretos, classificações, campanhas dos times e recordes coletivos com opções avançadas de filtragem, ordenação e visualização.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

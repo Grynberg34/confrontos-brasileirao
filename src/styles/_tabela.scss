@@ -218,6 +218,20 @@
         padding-left: 5vw;
         padding-right: 5vw;
         padding-bottom: 20vh;
+
+        .tabela__loading {
+            padding-top: 20vh;
+            padding-left: 25vw;
+            width: 40vw;
+    
+            .tabela__loading__icon {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 8vw !important;
+                height: 8vw !important;
+            }
+        }
     
         .tabela__header {
     
@@ -263,7 +277,6 @@
     
             .tabela__classificacao__rows {
                 margin-top: 0.75vh;
-                margin-right: 0.75vh;
     
                 .tabela__classificacao__rows__title {
                     font-size: 1.75vw;
