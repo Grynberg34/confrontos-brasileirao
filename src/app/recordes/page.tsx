@@ -8,6 +8,7 @@ import Header from "@/components/Header/Header";
 import ComponenteSequencia from "@/components/Recorde/ComponenteSequencia";
 import ComponentePerformance from "@/components/Recorde/ComponentePerformance";
 import ComponenteGoleada from "@/components/Recorde/ComponenteGoleada";
+import ComponenteTop5 from "@/components/Recorde/ComponenteTop5";
 import Grid from "@mui/material/Grid";
 import CircularProgress from "@mui/material/CircularProgress";
 
@@ -25,6 +26,12 @@ const RecordesPage: React.FC = () => {
     bestHomeSeason,
     bestAwaySeason,
     goleadas,
+    mostWins,
+    mostLosses,
+    mostPoints,
+    mostGoalsScored,
+    mostDraws,
+    mostGoalsAgainst,
     loading,
   } = useSelector((state: RootState) => state.recordes);
 
@@ -50,8 +57,8 @@ const RecordesPage: React.FC = () => {
   return (
     <div className='recordes'>
       <Header alternate={true} />
-      <h1 className='recordes__title'>Recordes coletivos</h1>
 
+      <h1 className='recordes__title'>Recordes coletivos</h1>
 
       <Grid container spacing={4}>
         <Grid size={{ xs: 12, sm: 6 }}>
@@ -68,6 +75,29 @@ const RecordesPage: React.FC = () => {
         </Grid>
       </Grid>
 
+      <h2 className="recordes__title">Top 5 de todas as edições</h2>
+
+      <Grid container spacing={4}>
+        <Grid size={{ xs: 12, sm: 6 }}>
+          <ComponenteTop5 title="Mais vitórias" records={mostWins} />
+        </Grid>
+        <Grid size={{ xs: 12, sm: 6 }}>
+          <ComponenteTop5 title="Mais pontos" records={mostPoints} />
+        </Grid>
+        <Grid size={{ xs: 12, sm: 6 }}>
+          <ComponenteTop5 title="Mais empates" records={mostDraws} />
+        </Grid>
+        <Grid size={{ xs: 12, sm: 6 }}>
+          <ComponenteTop5 title="Mais derrotas" records={mostLosses} />
+        </Grid>
+        <Grid size={{ xs: 12, sm: 6 }}>
+          <ComponenteTop5 title="Mais gols marcados" records={mostGoalsScored} />
+        </Grid>
+        <Grid size={{ xs: 12, sm: 6 }}>
+          <ComponenteTop5 title="Mais gols sofridos" records={mostGoalsAgainst} />
+        </Grid>
+      </Grid>
+      
       <h2 className='recordes__title'>Maiores goleadas</h2>
 
       <ComponenteGoleada goleadas={goleadas} />

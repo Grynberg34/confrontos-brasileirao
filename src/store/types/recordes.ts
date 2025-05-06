@@ -41,6 +41,11 @@ export interface Goleada {
     totalGoals?: number;
 }
 
+export interface TeamRecord {
+    team: string;
+    value: number;
+}
+  
 export interface RecordesState {
     winStreaks: Sequencia[];
     unbeatenStreaks: Sequencia[];
@@ -53,6 +58,12 @@ export interface RecordesState {
     bestHomeSeason?: Performance;
     bestAwaySeason?: Performance;
     goleadas: Goleada[];
+    mostWins: TeamRecord[];
+    mostLosses: TeamRecord[];
+    mostPoints: TeamRecord[];
+    mostGoalsScored: TeamRecord[];
+    mostDraws: TeamRecord[];
+    mostGoalsAgainst: TeamRecord[];
     loading: boolean;
     error: string | null;
 }

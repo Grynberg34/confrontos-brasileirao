@@ -93,6 +93,55 @@
 
     }
 
+    .recordes__top {
+        padding: 2vw;
+        background-color: colors.$blue;
+        border-radius: 0.5vw;
+
+        .recordes__top__title {
+            font-family: sporty-pro, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 1.75vw;
+            text-align: center;
+            color: colors.$lightYellow;
+            margin-bottom: 4vh;
+        }
+
+        .recordes__top__item {
+            padding-bottom: 1vh;
+
+            .recordes__top__item__position {
+                font-family: sporty-pro, sans-serif;
+                font-weight: 400;
+                font-size: 1vw;
+                color: colors.$white;
+            }
+
+            .recordes__top__item__img {
+                display: block;
+                width: 50%;
+                margin-top: 1vh;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .recordes__top__item__team {
+                font-family: sporty-pro, sans-serif;
+                font-weight: 400;
+                font-size: 1vw;
+                color: colors.$white;
+            }
+
+            .recordes__top__item__value {
+                font-family: sporty-pro, sans-serif;
+                font-weight: 400;
+                font-size: 1vw;
+                color: colors.$lightYellow;
+            }
+        }
+    }
+
     .recordes__goleadas {
         margin-top: 4vh;
         margin-bottom: 12vh;
@@ -170,7 +219,7 @@
             padding: 2vw;
             border-radius: 0.5vw;
             background-color: colors.$blue;
-            margin-bottom: 4vh;
+            margin-bottom: 8vh;
 
             .recordes__sequencias__sequencia__numero {
                 margin: 0;
@@ -312,6 +361,38 @@
             }
     
         }
+
+
+        .recordes__top {
+            padding: 6vw;
+            border-radius: 2vw;
+    
+            .recordes__top__title {
+                font-size: 4.5vw;
+            }
+    
+            .recordes__top__item {
+                padding-bottom: 1vh;
+    
+                .recordes__top__item__position {
+                    font-size: 3vw;
+                }
+    
+                .recordes__top__item__img {
+                    width: 50%;
+                    margin-top: 1vh;
+                }
+    
+                .recordes__top__item__team {
+                    font-size: 3vw;
+                }
+    
+                .recordes__top__item__value {
+                    font-size: 3vw;
+                }
+            }
+        }
+
     
         .recordes__goleadas {
             margin-top: 4vh;
@@ -353,7 +434,7 @@
         }
     
         .recordes__sequencias {
-            margin-top: 8vh;
+            margin-top: 12vh;
     
             .recordes__sequencias__title {
                 margin-bottom: 4vh;
@@ -363,7 +444,7 @@
             .recordes__sequencias__sequencia {
                 padding: 6vw;
                 border-radius: 2vw;
-                margin-bottom: 4vh;
+                margin-bottom: 6vh;
     
                 .recordes__sequencias__sequencia__numero {
                     margin: 0;

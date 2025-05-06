@@ -13,6 +13,12 @@ const initialState: RecordesState = {
   bestSecondHalf: undefined,
   bestHomeSeason: undefined,
   bestAwaySeason: undefined,
+  mostWins: [],
+  mostLosses: [],
+  mostPoints: [],
+  mostGoalsScored: [],
+  mostDraws: [],
+  mostGoalsAgainst: [],
   goleadas: [],
   loading: false,
   error: null,
@@ -83,6 +89,12 @@ const recordesSlice = createSlice({
         state.bestHomeSeason = action.payload.bestHomeSeason;
         state.bestAwaySeason = action.payload.bestAwaySeason;
         state.goleadas = action.payload.topBlowoutGamesByDifference;
+        state.mostWins = action.payload.mostWins;
+        state.mostLosses = action.payload.mostLosses;
+        state.mostPoints = action.payload.mostPoints;
+        state.mostGoalsScored = action.payload.mostGoalsScored; 
+        state.mostDraws = action.payload.mostDraws; 
+        state.mostGoalsAgainst = action.payload.mostGoalsAgainst; 
       })
       .addCase(fetchPerformances.rejected, (state, action) => {
         state.loading = false;

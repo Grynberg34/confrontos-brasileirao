@@ -39,9 +39,12 @@ const TabelaCampanhas: React.FC = () => {
     const sorted = [...campanhas].sort((a, b) => {
       const key = sortConfig.key as keyof typeof campanhas[0];
       const direction = sortConfig.direction === "asc" ? 1 : -1;
-
-      if (a[key] < b[key]) return -1 * direction;
-      if (a[key] > b[key]) return 1 * direction;
+    
+      const aValue = key === "aproveitamento" ? Number(a[key]) : a[key];
+      const bValue = key === "aproveitamento" ? Number(b[key]) : b[key];
+    
+      if (aValue < bValue) return -1 * direction;
+      if (aValue > bValue) return 1 * direction;
       return 0;
     });
 
