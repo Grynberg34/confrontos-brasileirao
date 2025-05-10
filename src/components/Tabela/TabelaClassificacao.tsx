@@ -9,7 +9,7 @@ const TabelaClassificacao: React.FC = () => {
   const { tabela } = useSelector((state: RootState) => state.tabela);
 
   return (
-    <div className="tabela__classificacao">
+    <div className="tabela__classificacao" data-testid="tabela-classificacao">
       <Grid container spacing={{xs: 1, sm: 2}} className="tabela__classificacao__header">
         <Grid size={{ xs: 1, sm: 1 }} />
         <Grid size={{ xs: 3, sm: 3 }}>
@@ -47,7 +47,7 @@ const TabelaClassificacao: React.FC = () => {
           <h2 className="tabela__classificacao__rows__title center">{index+1}</h2>
           </Grid>
           <Grid size={{ xs: 1, sm: 1 }}>
-            <img className='tabela__classificacao__rows__img' src={`/times/${time.time}.png`} alt="" />
+            <img className='tabela__classificacao__rows__img' src={`/times/${time.time}.png`} alt={`${index}`} />
           </Grid>
           <Grid size={{ xs: 2, sm: 2 }}>
             <h2 className="tabela__classificacao__rows__title left">{time.time}</h2>

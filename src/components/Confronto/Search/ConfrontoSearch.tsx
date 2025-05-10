@@ -8,7 +8,7 @@ import Partidas from '@/components/Confronto/Search/Partidas/Partidas';
 export default function Confronto() {
 
   return (
-    <div className="confronto">
+    <div className="confronto" data-testid="confronto-search">
 
       <Menu />
 

@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ alternate = false }) => {
   return (
     <div className={`header ${alternate ? 'header--alternate' : ''}`}>
       {pathname !== "/" && (
-        <Link className="header__home" href="/">
+        <Link className="header__home" href="/" title="home">
           <HomeIcon className="header__home__icon" />
         </Link>
       )}

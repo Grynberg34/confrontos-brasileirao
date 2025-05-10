@@ -21,7 +21,7 @@ const Tabela = () => {
 
   if (loading) return (
     <div className="tabela">
-      <Header />
+      <Header/>
       <div className="tabela__loading">
         <CircularProgress className="tabela__loading__icon" size={20} color="inherit" />
       </div>
@@ -34,7 +34,7 @@ const Tabela = () => {
 
       <Header />
       {
-        tabela.length > 1 && <div>
+        tabela.length > 0 && <div>
           <TabelaHeader />
     
           <TabelaClassificacao />
