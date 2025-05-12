@@ -13,7 +13,6 @@ const TabelaHeader: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
   const { ano, rodada, temRodadaSeguinte } = useSelector((state: RootState) => state.tabela);
 
-  // Debounced fetchTabela function
   const debouncedFetchTabela = useCallback(
     debounce((params: { rodada: number; ano: number; }) => dispatch(fetchTabela(params)), 300),
     [dispatch]
@@ -44,12 +43,12 @@ const TabelaHeader: React.FC = () => {
   };
 
   return (
-    <div className="tabela__header">
+    <div className="tabela__header"  data-testid="tabela-header">
         <div className='tabela__header__ano'>
             <Grid container spacing={2}>
                 <Grid size={{ xs: 3, sm: 4 }}>
                     {ano > 2003 && (
-                        <ArrowCircleLeftIcon className='tabela__header__ano__arrow' onClick={handlePreviousAno} />
+                        <ArrowCircleLeftIcon className='tabela__header__ano__arrow' onClick={handlePreviousAno} aria-label="previous year"   />
                     )}
                 </Grid>
 
@@ -59,7 +58,7 @@ const TabelaHeader: React.FC = () => {
 
                 <Grid size={{ xs: 3, sm: 4 }}>
                     {ano < 2025 && (
-                        <ArrowCircleRightIcon className='tabela__header__ano__arrow' onClick={handleNextAno} />
+                        <ArrowCircleRightIcon className='tabela__header__ano__arrow' onClick={handleNextAno} aria-label="next year"  />
                     )}
                 </Grid>
             </Grid>
@@ -68,7 +67,7 @@ const TabelaHeader: React.FC = () => {
             <Grid container spacing={2}>
                 <Grid size={{ xs: 3, sm: 4 }}>
                     {rodada > 1 && (
-                        <ArrowCircleLeftIcon className='tabela__header__rodada__arrow' onClick={handlePreviousRodada} />
+                        <ArrowCircleLeftIcon className='tabela__header__rodada__arrow' onClick={handlePreviousRodada}  aria-label="previous rodada" />
                     )}
                 </Grid>
 
@@ -78,7 +77,7 @@ const TabelaHeader: React.FC = () => {
 
                 <Grid size={{ xs: 3, sm: 4 }}>
                     {temRodadaSeguinte && (
-                        <ArrowCircleRightIcon className='tabela__header__rodada__arrow' onClick={handleNextRodada} />
+                        <ArrowCircleRightIcon className='tabela__header__rodada__arrow' onClick={handleNextRodada} aria-label="next rodada" />
                     )}
                 </Grid>
             </Grid>

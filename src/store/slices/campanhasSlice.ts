@@ -40,7 +40,7 @@ const campanhasSlice = createSlice({
       })
       .addCase(fetchCampanhas.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.payload as string;
+        state.error = action.error.message || 'Error loading';
       });
   },
 });

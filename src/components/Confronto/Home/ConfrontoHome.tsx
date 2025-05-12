@@ -4,7 +4,7 @@ import Times from '@/components/Confronto/Home/Times';
 
 export default function ConfrontoHome() {
   return (
-    <div className="confrontohome">
+    <div className="confrontohome" data-testid="confronto-home">
 
       <Header />
 

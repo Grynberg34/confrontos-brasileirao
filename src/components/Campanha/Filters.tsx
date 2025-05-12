@@ -67,7 +67,7 @@ const Filters: React.FC<FiltersProps> = ({
             value={selectedYear || ""}
             onChange={handleYearChange}
           >
-            <option className="campanhas__filters__select__option" value="">
+            <option className="campanhas__filters__select__option" value="" data-testid="Ano">
               Todos os anos
             </option>
             {availableYears.map((year) => (
@@ -88,7 +88,7 @@ const Filters: React.FC<FiltersProps> = ({
             value={selectedTeam || ""}
             onChange={handleTeamChange}
           >
-            <option className="campanhas__filters__select__option" value="">
+            <option className="campanhas__filters__select__option" value="" data-testid="Time">
               Todos os times
             </option>
             {availableTeams.map((team) => (

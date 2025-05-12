@@ -10,7 +10,7 @@ const TabelaJogos: React.FC = () => {
   const { jogosDaRodada, rodada, ano } = useSelector((state: RootState) => state.tabela);
 
   return (
-    <div className="tabela__jogos">
+    <div className="tabela__jogos" data-testid="tabela-jogos">
       <h1 className='tabela__jogos__title'>Jogos da rodada {rodada}</h1>
       <Grid container spacing={{xs: 1, sm: 2}}>
         {jogosDaRodada.map((jogo, index) => {
@@ -21,13 +21,13 @@ const TabelaJogos: React.FC = () => {
               <div className={`tabela__jogos__jogo ${index % 2 === 0 ? 'odd' : 'even'}`}>
                 <Grid container spacing={1}>
                   <Grid size={{ xs: 3, sm: 3 }}>
-                    <img className='tabela__jogos__jogo__img' src={`/times/${jogo.mandante}.png`} alt="" />
+                    <img className='tabela__jogos__jogo__img' src={`/times/${jogo.mandante}.png`} alt="time1" />
                   </Grid>
                   <Grid size={{ xs: 6, sm: 6 }}>
                     <h1 className='tabela__jogos__jogo__placar'>{jogo.golsMandante} x {jogo.golsVisitante}</h1>
                   </Grid>
                   <Grid size={{ xs: 3, sm: 3 }}>
-                    <img className='tabela__jogos__jogo__img' src={`/times/${jogo.visitante}.png`} alt="" />
+                    <img className='tabela__jogos__jogo__img' src={`/times/${jogo.visitante}.png`} alt="time2" />
                   </Grid>
                 </Grid>
 

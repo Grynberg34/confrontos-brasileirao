@@ -76,7 +76,7 @@ const recordesSlice = createSlice({
       })
       .addCase(fetchStreaks.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.payload as string;
+        state.error = action.error.message || 'Error loading';
       })
       .addCase(fetchPerformances.pending, (state) => {
         state.loading = true;
@@ -98,7 +98,7 @@ const recordesSlice = createSlice({
       })
       .addCase(fetchPerformances.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.payload as string;
+        state.error = action.error.message || 'Error loading';
       });
   },
 });

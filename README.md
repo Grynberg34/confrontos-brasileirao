@@ -80,6 +80,18 @@ https://confrontos-corridos.site/
 
 ---
 
+## Tests
+
+This project includes a comprehensive test suite to ensure the reliability and functionality of the application. The tests cover components, Redux slices, utility functions, and more.
+
+### Running Tests
+
+To run the test suite, use the following commands:
+
+- **Run all tests**:
+  ```bash
+  npm run test
+
 ## Scripts
 
 - `npm run dev`: Starts the development server.
