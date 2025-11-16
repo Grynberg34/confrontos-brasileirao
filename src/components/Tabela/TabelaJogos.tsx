@@ -20,9 +20,6 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 const TabelaJogos: React.FC = () => {
   const { jogosDaRodada, rodada, ano } = useSelector((state: RootState) => state.tabela);
 
-  console.log('Jogos da Rodada:', jogosDaRodada);
-
-
   return (
     <div className="tabela__jogos" data-testid="tabela-jogos">
       <h1 className='tabela__jogos__title'>Jogos da rodada {rodada}</h1>
