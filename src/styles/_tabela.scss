@@ -207,6 +207,15 @@
                     color: colors.$lightYellow;
                 }
             }
+
+            .tabela__jogos__jogo__data {
+                color: colors.$white;
+                font-family: ofelia-display, sans-serif;
+                font-size: 0.7vw;
+                text-align: center;
+                margin-top: 0.25vw;
+                margin-bottom: 0;
+            }
         }
     }
 }
@@ -324,6 +333,15 @@
                     &:hover {
                         color: colors.$olivine;
                     }
+                }
+
+                .tabela__jogos__jogo__data {
+                    color: colors.$white;
+                    font-family: ofelia-display, sans-serif;
+                    font-size: 2vw;
+                    text-align: center;
+                    margin-top: 1vw;
+                    margin-bottom: 0;
                 }
             }
         }
