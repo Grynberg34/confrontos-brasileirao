@@ -16,7 +16,7 @@ const Tabela = () => {
   const { tabela, loading } = useSelector((state: RootState) => state.tabela);
 
   useEffect(() => {
-    dispatch(fetchTabela({ rodada: 0, ano: 2025 }));
+    dispatch(fetchTabela({ rodada: 0, ano: 2026 }));
   }, [dispatch]);
 
   if (loading) return (

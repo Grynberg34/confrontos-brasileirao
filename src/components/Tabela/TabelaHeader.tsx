@@ -57,7 +57,7 @@ const TabelaHeader: React.FC = () => {
                 </Grid>
 
                 <Grid size={{ xs: 3, sm: 4 }}>
-                    {ano < 2025 && (
+                    {ano < 2026 && (
                         <ArrowCircleRightIcon className='tabela__header__ano__arrow' onClick={handleNextAno} aria-label="next year"  />
                     )}
                 </Grid>
