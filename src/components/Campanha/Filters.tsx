@@ -3,12 +3,12 @@ import Grid from "@mui/material/Grid";
 
 interface FiltersProps {
   filters: {
-    filter2025: boolean;
+    filter2026: boolean;
     selectedYear: number | null;
     selectedTeam: string | null;
   };
   setFilters: {
-    setFilter2025: (value: boolean) => void;
+    setFilter2026: (value: boolean) => void;
     setSelectedYear: (value: number | null) => void;
     setSelectedTeam: (value: string | null) => void;
   };
@@ -24,11 +24,11 @@ const Filters: React.FC<FiltersProps> = ({
   availableTeams,
   resetSortConfig,
 }) => {
-  const { filter2025, selectedYear, selectedTeam } = filters;
-  const { setFilter2025, setSelectedYear, setSelectedTeam } = setFilters;
+  const { filter2026, selectedYear, selectedTeam } = filters;
+  const { setFilter2026, setSelectedYear, setSelectedTeam } = setFilters;
 
-  const handleFilter2025Change = () => {
-    setFilter2025(!filter2025);
+  const handleFilter2026Change = () => {
+    setFilter2026(!filter2026);
     resetSortConfig();
   };
 
@@ -51,10 +51,10 @@ const Filters: React.FC<FiltersProps> = ({
             <input
               className="campanhas__filters__input"
               type="checkbox"
-              checked={filter2025}
-              onChange={handleFilter2025Change}
+              checked={filter2026}
+              onChange={handleFilter2026Change}
             />
-            mostrar campanhas de 2025
+            mostrar campanhas de 2026
           </label>
         </Grid>
         <Grid size={{ xs: 3, sm: 2 }}>

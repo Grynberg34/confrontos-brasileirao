@@ -5,7 +5,7 @@ import { Tabela } from '../types/tabela';
 const initialState: Tabela = {
   tabela: [],
   jogosDaRodada: [],
-  ano: 2025,
+  ano: 2026,
   rodada: 1,
   loading: false,
   error: null,
