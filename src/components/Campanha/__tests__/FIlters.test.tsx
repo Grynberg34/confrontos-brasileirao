@@ -5,7 +5,7 @@ import "@testing-library/jest-dom";
 
 describe("Filters Component", () => {
   const mockSetFilters = {
-    setFilter2025: jest.fn(),
+    setFilter2026: jest.fn(),
     setSelectedYear: jest.fn(),
     setSelectedTeam: jest.fn(),
   };
@@ -14,12 +14,12 @@ describe("Filters Component", () => {
 
   const defaultProps = {
     filters: {
-      filter2025: true,
+      filter2026: true,
       selectedYear: null,
       selectedTeam: null,
     },
     setFilters: mockSetFilters,
-    availableYears: [2023, 2024, 2025],
+    availableYears: [2023, 2024, 2026],
     availableTeams: ["Team A", "Team B", "Team C"],
     resetSortConfig: mockResetSortConfig,
   };
@@ -31,9 +31,9 @@ describe("Filters Component", () => {
   it("renders all filter options correctly", () => {
     render(<Filters {...defaultProps} />);
 
-    const filter2025Checkbox = screen.getByLabelText("mostrar campanhas de 2025");
-    expect(filter2025Checkbox).toBeInTheDocument();
-    expect(filter2025Checkbox).toBeChecked();
+    const filter2026Checkbox = screen.getByLabelText("mostrar campanhas de 2026");
+    expect(filter2026Checkbox).toBeInTheDocument();
+    expect(filter2026Checkbox).toBeChecked();
 
     const yearDropdown = screen.getByTestId("Ano");
     expect(yearDropdown).toBeInTheDocument();
@@ -44,13 +44,13 @@ describe("Filters Component", () => {
     expect(teamDropdown).toHaveValue("");
   });
 
-  it("calls setFilter2025 and resetSortConfig when the 2025 filter is toggled", () => {
+  it("calls setFilter2026 and resetSortConfig when the 2026 filter is toggled", () => {
     render(<Filters {...defaultProps} />);
 
-    const filter2025Checkbox = screen.getByLabelText("mostrar campanhas de 2025");
-    fireEvent.click(filter2025Checkbox);
+    const filter2026Checkbox = screen.getByLabelText("mostrar campanhas de 2026");
+    fireEvent.click(filter2026Checkbox);
 
-    expect(mockSetFilters.setFilter2025).toHaveBeenCalledWith(false);
+    expect(mockSetFilters.setFilter2026).toHaveBeenCalledWith(false);
     expect(mockResetSortConfig).toHaveBeenCalled();
   });
 });

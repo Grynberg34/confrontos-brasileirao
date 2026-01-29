@@ -27,7 +27,7 @@ const TabelaCampanhas: React.FC = () => {
     setSortConfig({ key: "aproveitamento", direction: "desc" });
   };
 
-  const [filter2025, setFilter2025] = useState(true);
+  const [filter2026, setFilter2026] = useState(true);
   const [selectedYear, setSelectedYear] = useState<number | null>(null);
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
 
@@ -49,7 +49,7 @@ const TabelaCampanhas: React.FC = () => {
     });
 
     const sortedWithIndex = sorted
-      .filter((campanha) => filter2025 || campanha.ano !== 2025)
+      .filter((campanha) => filter2026 || campanha.ano !== 2026)
       .map((campanha, index) => ({
         ...campanha,
         originalIndex: index + 1,
@@ -65,7 +65,7 @@ const TabelaCampanhas: React.FC = () => {
     }
 
     setSortedData(filtered);
-  }, [campanhas, filter2025, selectedYear, selectedTeam, sortConfig]);
+  }, [campanhas, filter2026, selectedYear, selectedTeam, sortConfig]);
 
   if (loading) {
     return (
@@ -89,13 +89,13 @@ const TabelaCampanhas: React.FC = () => {
   ].sort();
 
   const filters = {
-    filter2025,
+    filter2026,
     selectedYear,
     selectedTeam,
   };
 
   const setFilters = {
-    setFilter2025,
+    setFilter2026,
     setSelectedYear,
     setSelectedTeam,
   };
