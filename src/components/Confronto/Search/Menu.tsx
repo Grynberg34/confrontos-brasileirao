@@ -12,7 +12,7 @@ const Menu = () => {
 
       <Grid container spacing={2}>
         <Grid size={{ xs: 7, sm: 8 }}>
-          <Link className='menu__link' href="/"><h1 className="menu__title">Confrontos Corridos</h1></Link>
+          <Link className='menu__link' href="/"><h1 className="menu__title">Pontos Corridos</h1></Link>
         </Grid>
 
 

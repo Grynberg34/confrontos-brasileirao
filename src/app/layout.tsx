@@ -3,7 +3,7 @@ import Provider from "@/store/provider";
 import "../styles/global.scss";
 
 export const metadata: Metadata = {
-  title: "Confrontos Corridos",
+  title: "Pontos Corridos",
   description:
     "Uma aplicação web desenvolvida com React, Redux, Next.js e TypeScript que oferece dados e insights completos sobre o Campeonato Brasileiro durante a era de pontos corridos (2003–2025). Os usuários podem explorar confrontos diretos, classificações, campanhas dos times e recordes coletivos com opções avançadas de filtragem, ordenação e visualização.",
 };

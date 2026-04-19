@@ -14,7 +14,7 @@ describe('Header Component', () => {
 
     render(<Header />);
 
-    expect(screen.getByText('Confrontos Corridos')).toBeInTheDocument();
+    expect(screen.getByText('Pontos Corridos')).toBeInTheDocument();
     expect(screen.getByText('Brasileirão 2003-2025')).toBeInTheDocument();
   });
 
