@@ -13,8 +13,6 @@ export default function App() {
 
       <Tools />
 
-      <a className='home__footer' href="https://www.linkedin.com/in/francisco-grynberg/" target="_blank" rel="noreferrer">Desenvolvido por <strong>Francisco Grynberg</strong></a>
-
     </div>
   );
 }
